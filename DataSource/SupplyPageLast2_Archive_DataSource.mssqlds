@@ -1,0 +1,124 @@
+{
+  "name": "SupplyPageLast2_Archive_DataSource",
+  "connectionId": "2dcd512f-99a0-4d7f-b7c3-773a3dc91931",
+  "connectionName": {
+    "tr-TR": "SYNERGYDEV"
+  },
+  "connectionType": 1,
+  "description": {},
+  "id": null,
+  "properties": {
+    "cacheTTL": 60000,
+    "cacheType": "Memory",
+    "enableCache": true,
+    "timeout": 60,
+    "commandText": "SELECT DOCUMENTID,\nE_SupplierIdentification_SupplyPage.ACTIVITY,\nCOALESCE(NULLIF(E_SupplierIdentification_SupplyPageML_SystemCulture.COMPATIBLEVERSION, ''), NULLIF(E_SupplierIdentification_SupplyPageML_UserCulture.COMPATIBLEVERSION, ''), NULLIF(E_SupplierIdentification_SupplyPageML_defaultCulture.COMPATIBLEVERSION, '')) AS COMPATIBLEVERSION,\nE_SupplierIdentification_SupplyPage.HOTFIXVALUE,\nE_SupplierIdentification_SupplyPage.MAJORVALUE,\nE_SupplierIdentification_SupplyPage.MINORVALUE,\nE_SupplierIdentification_SupplyPageSL.SECTORSELECTION,\nE_SupplierIdentification_SupplyPageSL.CATEGORYSELECTION,\nE_SupplierIdentification_SupplyPageSL.SOLUTIONSELECT,\nE_SupplierIdentification_SupplyPageSL.APPLICATIONNAME,\nCOALESCE(NULLIF(E_SupplierIdentification_SupplyPageML_SystemCulture.SUMMARYINFORMATION, ''), NULLIF(E_SupplierIdentification_SupplyPageML_UserCulture.SUMMARYINFORMATION, ''), NULLIF(E_SupplierIdentification_SupplyPageML_defaultCulture.SUMMARYINFORMATION, '')) AS SUMMARYINFORMATION,\nE_SupplierIdentification_SupplyPage.ACTIVITY,\nCOALESCE(NULLIF(E_SupplierIdentification_SupplyPageML_SystemCulture.HTMLDETAILS, ''), NULLIF(E_SupplierIdentification_SupplyPageML_UserCulture.HTMLDETAILS, ''), NULLIF(E_SupplierIdentification_SupplyPageML_defaultCulture.HTMLDETAILS, '')) AS HTMLDETAILS\n FROM E_SupplierIdentification_SupplyPage\n\n            OUTER APPLY (SELECT COMPATIBLEVERSION,SUMMARYINFORMATION,HTMLDETAILS FROM E_SupplierIdentification_SupplyPageML WHERE E_SupplierIdentification_SupplyPage.ID = E_SupplierIdentification_SupplyPageML.PARENTID AND E_SupplierIdentification_SupplyPageML.CULTURE = 'system') E_SupplierIdentification_SupplyPageML_SystemCulture \n            OUTER APPLY (SELECT COMPATIBLEVERSION,SUMMARYINFORMATION,HTMLDETAILS FROM E_SupplierIdentification_SupplyPageML WHERE E_SupplierIdentification_SupplyPage.ID = E_SupplierIdentification_SupplyPageML.PARENTID AND E_SupplierIdentification_SupplyPageML.CULTURE = {{Culture}}) E_SupplierIdentification_SupplyPageML_UserCulture\n            OUTER APPLY (SELECT COMPATIBLEVERSION,SUMMARYINFORMATION,HTMLDETAILS FROM E_SupplierIdentification_SupplyPageML WHERE E_SupplierIdentification_SupplyPage.ID = E_SupplierIdentification_SupplyPageML.PARENTID AND E_SupplierIdentification_SupplyPageML.CULTURE = (SELECT TOP 1 CULTURE from LANGUAGES WHERE ISDEFAULT = 1)) E_SupplierIdentification_SupplyPageML_defaultCulture\n            \n\n LEFT JOIN\n (SELECT * FROM (\n\t\tSELECT formSL.CONTROLID, \n                   (\n                       SELECT \n                         STRING_AGG(formSLMLMultiple.TEXT, ',') AS TEXT                    \n                       FROM E_SupplierIdentification_SupplyPageSL formSLMultiple\n                           JOIN E_SupplierIdentification_SupplyPageSLML formSLMLMultiple WITH (NOLOCK)\n                               ON formSLMultiple.ID = formSLMLMultiple.PARENTID\n                       WHERE formSLMultiple.PARENTID = formSL.PARENTID\n                             AND formSLMultiple.CONTROLID = formSL.CONTROLID\n                             AND formSLMLMultiple.CULTURE = CASE WHEN\n                                             EXISTS (SELECT TOP 1 1 FROM E_SupplierIdentification_SupplyPageSLML checkML WITH (NOLOCK) WHERE\n                                                        formSLML.PARENTID = checkML.PARENTID AND\n                                                        checkML.CULTURE = {{Culture}} AND\n                                                        checkML.TEXT  IS NOT NULL\n                                                    )\n                                             THEN {{Culture}}\n                                             WHEN\n                                             (SELECT COUNT (1) FROM E_SupplierIdentification_SupplyPageSLML WHERE \n                                                 E_SupplierIdentification_SupplyPageSLML.PARENTID = formSLMultiple.ID) = 1\n                                             THEN \n                                                 formSLMLMultiple.CULTURE\n                                             ELSE\n                                                 'system'\n                                             END\n                        \n                   ) AS TEXT, \n                formSL.PARENTID\n\t\t\t        FROM E_SupplierIdentification_SupplyPageSL formSL\n\t\t\t        JOIN E_SupplierIdentification_SupplyPageSLML formSLML \n\t\t\t        \t WITH (NOLOCK) ON formSL.ID = formSLML.PARENTID\n\t\t        ) as formSLML\t\nPIVOT(MAX(TEXT) FOR CONTROLID IN (SECTORSELECTION,CATEGORYSELECTION,SOLUTIONSELECT,APPLICATIONNAME)) AS formSelect)  E_SupplierIdentification_SupplyPageSL\n          ON E_SupplierIdentification_SupplyPageSL.PARENTID = E_SupplierIdentification_SupplyPage.ID\n         \nWHERE\nE_SupplierIdentification_SupplyPage.DELETEDAT IS NULL\nAND ({{PARAMS}} = '0' OR E_SupplierIdentification_SupplyPage.ACTIVITY = {{PARAMS}})\n\n\nORDER BY\n    CASE\n        WHEN {{PARAMS}} = '1' THEN E_SupplierIdentification_SupplyPage.ACTIVITY\n        ELSE 1 + E_SupplierIdentification_SupplyPage.ACTIVITY\n    END DESC,\nDOCUMENTID DESC\n",
+    "parameters": [
+      {
+        "caption": "Culture",
+        "isActive": true,
+        "isRequired": true,
+        "key": "Culture",
+        "value": "%User.Language%",
+        "valueType": 1,
+        "length": 10,
+        "subType": null
+      },
+      {
+        "caption": "",
+        "isActive": true,
+        "isRequired": true,
+        "key": "PARAMS",
+        "value": "0",
+        "valueType": 1,
+        "length": 255,
+        "subType": null
+      }
+    ],
+    "commandType": 1,
+    "executionType": 3
+  },
+  "structure": {
+    "columns": [
+      {
+        "name": "DOCUMENTID",
+        "type": 3,
+        "caption": "DOCUMENTID",
+        "columns": []
+      },
+      {
+        "name": "ACTIVITY",
+        "type": 2,
+        "caption": "ACTIVITY",
+        "columns": []
+      },
+      {
+        "name": "COMPATIBLEVERSION",
+        "type": 1,
+        "caption": "COMPATIBLEVERSION",
+        "columns": []
+      },
+      {
+        "name": "HOTFIXVALUE",
+        "type": 15,
+        "caption": "HOTFIXVALUE",
+        "columns": []
+      },
+      {
+        "name": "MAJORVALUE",
+        "type": 15,
+        "caption": "MAJORVALUE",
+        "columns": []
+      },
+      {
+        "name": "MINORVALUE",
+        "type": 15,
+        "caption": "MINORVALUE",
+        "columns": []
+      },
+      {
+        "name": "SECTORSELECTION",
+        "type": 1,
+        "caption": "SECTORSELECTION",
+        "columns": []
+      },
+      {
+        "name": "CATEGORYSELECTION",
+        "type": 1,
+        "caption": "CATEGORYSELECTION",
+        "columns": []
+      },
+      {
+        "name": "SOLUTIONSELECT",
+        "type": 1,
+        "caption": "SOLUTIONSELECT",
+        "columns": []
+      },
+      {
+        "name": "APPLICATIONNAME",
+        "type": 1,
+        "caption": "APPLICATIONNAME",
+        "columns": []
+      },
+      {
+        "name": "SUMMARYINFORMATION",
+        "type": 1,
+        "caption": "SUMMARYINFORMATION",
+        "columns": []
+      },
+      {
+        "name": "ACTIVITY1",
+        "type": 2,
+        "caption": "ACTIVITY1",
+        "columns": []
+      },
+      {
+        "name": "HTMLDETAILS",
+        "type": 1,
+        "caption": "HTMLDETAILS",
+        "columns": []
+      }
+    ],
+    "returnType": 10
+  }
+}

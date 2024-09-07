@@ -1,0 +1,1837 @@
+{
+  "data": {
+    "PartnerUserLast2_Archive": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnMessageReceived",
+            "methodName": "PartnerUserLast2_Archive_OnMessageReceived"
+          },
+          {
+            "name": "OnToolbarButtonClicked",
+            "methodName": "PartnerUserLast2_Archive_OnToolbarButtonClicked"
+          },
+          {
+            "name": "OnLoad",
+            "methodName": "PartnerUserLast2_Archive_OnLoad"
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "Partner Listesi",
+            "en-US": "PartnerUserLast2_Archive",
+            "ru-RU": "PartnerUserLast2_Archive",
+            "az-Latn-AZ": "PartnerUserLast2_Archive"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "New",
+            "enabled": true,
+            "name": "New",
+            "caption": {
+              "tr-TR": "Yeni"
+            },
+            "icon": "add"
+          },
+          {
+            "key": "listPassive",
+            "enabled": true,
+            "name": "listPassive",
+            "caption": {
+              "tr-TR": "Pasifleri Dahil Et"
+            },
+            "icon": "switch-off"
+          },
+          {
+            "key": "closePassive",
+            "enabled": false,
+            "name": "closePassive",
+            "caption": {
+              "tr-TR": "Pasifleri Dahil Et"
+            },
+            "icon": "switch-on"
+          }
+        ],
+        "name": "PartnerUserLast2_Archive",
+        "ddl": {
+          "prefix": "SupplierIdentification",
+          "name": "PartnerUserLast2_Archive"
+        },
+        "text": {
+          "tr-TR": "PartnerUserLast2_Archive",
+          "en-US": "PartnerUserLast2_Archive",
+          "ru-RU": "PartnerUserLast2_Archive",
+          "az-Latn-AZ": "PartnerUserLast2_Archive"
+        },
+        "commitId": 11,
+        "controlType": "Form",
+        "controlId": "04c0c3ab-4ea4-428d-ba61-9be4a3d80b42"
+      },
+      "viewProperties": {},
+      "id": "PartnerUserLast2_Archive",
+      "type": "Form"
+    },
+    "PartnerUserLast2_Archive_Grid": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnToolbarButtonClick",
+            "methodName": "PartnerUserLast2_Archive_Grid_OnToolbarButtonClick"
+          },
+          {
+            "name": "OnActionButtonClick",
+            "methodName": "PartnerUserLast2_Archive_Grid_OnActionButtonClick"
+          }
+        ],
+        "dataSource": {
+          "name": "PartnerUserLast2_Archive_DataSource",
+          "parameters": [
+            {
+              "name": "PARAMS",
+              "length": 255,
+              "valueType": "string",
+              "isRequired": true,
+              "valueModifier": "fieldSelection",
+              "value": "0",
+              "field": "FILTERPARAMS.value",
+              "subType": null
+            }
+          ],
+          "useClientCachedData": false,
+          "fileId": "<DataSource-PartnerUserLast2_Archive_DataSource>",
+          "connectionType": 1
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "PartnerUserLast2_Archive_Grid",
+            "en-US": "PartnerUserLast2_Archive_Grid",
+            "ru-RU": "PartnerUserLast2_Archive_Grid",
+            "az-Latn-AZ": "PartnerUserLast2_Archive_Grid"
+          },
+          "visible": false
+        },
+        "filtering": {
+          "enabled": true,
+          "headerFilterEnabled": true
+        },
+        "name": "PartnerUserLast2_Archive_Grid",
+        "selection": {
+          "enabled": true
+        },
+        "ddl": {
+          "name": "PartnerUserLast2_Archive_Grid"
+        },
+        "contextMenuKey": "ctxPartnerMenu",
+        "commitId": 30,
+        "controlType": "DataGrid",
+        "controlId": "06aaa75a-8f6b-4eed-8f85-0c54b42c9dfa",
+        "columnSettings": {
+          "resizeable": true,
+          "showColumnChooser": true
+        },
+        "searching": {
+          "enabled": true
+        },
+        "columns": [
+          {
+            "name": "View",
+            "caption": {
+              "tr-TR": "View",
+              "en-US": "View",
+              "ru-RU": "View",
+              "az-Latn-AZ": "View"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": false,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlId": "View",
+              "name": "View",
+              "ddl": {
+                "name": "View"
+              }
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "View_action_button",
+              "text": {
+                "tr-TR": "View",
+                "en-US": "View",
+                "ru-RU": "View",
+                "az-Latn-AZ": "View"
+              },
+              "title": {
+                "tr-TR": "View",
+                "en-US": "View",
+                "ru-RU": "View",
+                "az-Latn-AZ": "View"
+              },
+              "icon": "search",
+              "typeName": "OpenFormArgs",
+              "args": {
+                "typeName": "OpenFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": [],
+                "documentId": "[DOCUMENTID]",
+                "editable": false
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "none",
+              "columnName": "View",
+              "size": 0,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "actionButton",
+              "format": ""
+            },
+            "editType": "actionButton",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "0"
+          },
+          {
+            "name": "DOCUMENTID",
+            "caption": {
+              "tr-TR": "DOCUMENTID",
+              "en-US": "DOCUMENTID",
+              "ru-RU": "DOCUMENTID",
+              "az-Latn-AZ": "DOCUMENTID"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": false,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "DOCUMENTID",
+              "controlId": "DOCUMENTID",
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": true,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "DOCUMENTID",
+                "allowNull": true,
+                "type": "Decimal"
+              },
+              "text": "",
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": true,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": false,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "decimal",
+              "columnName": "DOCUMENTID",
+              "size": 0,
+              "nullable": true,
+              "precision": 0
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "numberBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "1"
+          },
+          {
+            "name": "USERNAME",
+            "caption": {
+              "tr-TR": "Ad",
+              "en-US": "USERNAME",
+              "ru-RU": "USERNAME",
+              "az-Latn-AZ": "USERNAME"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "USERNAME",
+              "controlId": "USERNAME",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "USERNAME",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "USERNAME",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "2"
+          },
+          {
+            "name": "USERSURNAME",
+            "caption": {
+              "tr-TR": "Soyad",
+              "en-US": "USERSURNAME",
+              "ru-RU": "USERSURNAME",
+              "az-Latn-AZ": "USERSURNAME"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "USERSURNAME",
+              "controlId": "USERSURNAME",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "USERSURNAME",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "USERSURNAME",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "3"
+          },
+          {
+            "name": "USERTITLE",
+            "caption": {
+              "tr-TR": "Ünvan",
+              "en-US": "USERTITLE",
+              "ru-RU": "USERTITLE",
+              "az-Latn-AZ": "USERTITLE"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "USERTITLE",
+              "controlId": "USERTITLE",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "USERTITLE",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "USERTITLE",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "4"
+          },
+          {
+            "name": "USEREMAIL",
+            "caption": {
+              "tr-TR": "E-Mail",
+              "en-US": "USEREMAIL",
+              "ru-RU": "USEREMAIL",
+              "az-Latn-AZ": "USEREMAIL"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "USEREMAIL",
+              "controlId": "USEREMAIL",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "USEREMAIL",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "USEREMAIL",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "5"
+          },
+          {
+            "name": "USERPHONENUMBER",
+            "caption": {
+              "tr-TR": "Telefon Numarası",
+              "en-US": "USERPHONENUMBER",
+              "ru-RU": "USERPHONENUMBER",
+              "az-Latn-AZ": "USERPHONENUMBER"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "USERPHONENUMBER",
+              "controlId": "USERPHONENUMBER",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "USERPHONENUMBER",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "USERPHONENUMBER",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "6"
+          },
+          {
+            "name": "PARTNERGROUPS",
+            "caption": {
+              "tr-TR": "Partner Grubu",
+              "en-US": "PARTNERGROUPS",
+              "ru-RU": "PARTNERGROUPS",
+              "az-Latn-AZ": "PARTNERGROUPS"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "PARTNERGROUPS",
+              "controlId": "PARTNERGROUPS",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "PARTNERGROUPS",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "PARTNERGROUPS",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "7"
+          },
+          {
+            "name": "USERPASSWORD",
+            "caption": {
+              "tr-TR": "USERPASSWORD",
+              "en-US": "USERPASSWORD",
+              "ru-RU": "USERPASSWORD",
+              "az-Latn-AZ": "USERPASSWORD"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": false,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "USERPASSWORD",
+              "controlId": "USERPASSWORD",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "USERPASSWORD",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "USERPASSWORD",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "8"
+          },
+          {
+            "name": "ACTIVITY",
+            "caption": {
+              "tr-TR": "Aktiflik",
+              "en-US": "ACTIVITY",
+              "ru-RU": "ACTIVITY",
+              "az-Latn-AZ": "ACTIVITY"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": false,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "ACTIVITY",
+              "controlId": "ACTIVITY",
+              "controlType": "CheckBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "ACTIVITY",
+                "allowNull": true,
+                "type": "Boolean"
+              },
+              "value": false
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "boolean",
+              "columnName": "ACTIVITY",
+              "size": 0,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "icon",
+              "format": ""
+            },
+            "editType": "checkBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "9"
+          },
+          {
+            "name": "ACTIVITY1",
+            "caption": {
+              "tr-TR": "Aktiflik"
+            },
+            "width": "15%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlType": "CheckBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "ACTIVITY1",
+                "allowNull": true,
+                "type": "Boolean"
+              },
+              "value": false,
+              "tabIndex": 0,
+              "controlId": "ACTIVITY1",
+              "name": "ACTIVITY1"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "boolean",
+              "columnName": "ACTIVITY1"
+            },
+            "formatType": {
+              "format": "",
+              "type": "icon"
+            },
+            "editType": "checkBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "10"
+          }
+        ],
+        "contextMenuTarget": "Row"
+      },
+      "viewProperties": {},
+      "id": "PartnerUserLast2_Archive_Grid",
+      "type": "DataGrid"
+    },
+    "FILTERPARAMS": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "FILTERPARAMS"
+          }
+        },
+        "clientVisible": false,
+        "name": "FILTERPARAMS",
+        "ddl": {
+          "name": "FILTERPARAMS"
+        },
+        "commitId": 14,
+        "controlId": "26db9be8-fe92-170a-cd81-b42beec381bb",
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "FILTERPARAMS",
+      "type": "TextBox"
+    },
+    "ctxPartnerMenu": {
+      "properties": {
+        "items": [
+          {
+            "name": "Edit",
+            "text": {
+              "tr-TR": "Düzenle"
+            },
+            "title": {
+              "tr-TR": "Düzenle"
+            },
+            "icon": "edit",
+            "typeName": "ContextItemArgs",
+            "args": {
+              "children": []
+            },
+            "extendedArgs": {
+              "id": "d3e2870f-3e63-aa6e-21f0-859807bc9c30"
+            },
+            "visible": true
+          },
+          {
+            "name": "Copy",
+            "text": {
+              "tr-TR": "Görüntüle"
+            },
+            "title": {
+              "tr-TR": "Görüntüle"
+            },
+            "icon": "copy",
+            "typeName": "ContextItemArgs",
+            "args": {
+              "children": []
+            },
+            "extendedArgs": {
+              "id": "eaad11ed-3362-149e-ce3c-142fa368e6bc"
+            },
+            "visible": true
+          },
+          {
+            "name": "MakeActive",
+            "text": {
+              "tr-TR": "Aktif Et"
+            },
+            "title": {
+              "tr-TR": "Aktif Et"
+            },
+            "icon": "switch-on",
+            "typeName": "ContextItemArgs",
+            "args": {
+              "children": []
+            },
+            "extendedArgs": {
+              "id": "fd231149-1167-276d-7b32-c92e5025f474"
+            },
+            "visible": true
+          },
+          {
+            "name": "MakePassive",
+            "text": {
+              "tr-TR": "Pasif Et"
+            },
+            "title": {
+              "tr-TR": "Pasif Et"
+            },
+            "icon": "switch-off",
+            "typeName": "ContextItemArgs",
+            "args": {
+              "children": []
+            },
+            "extendedArgs": {
+              "id": "1aad5090-dc57-c78a-4ede-cd1030cf5344"
+            },
+            "visible": true
+          },
+          {
+            "name": "Delete",
+            "text": {
+              "tr-TR": "Sil"
+            },
+            "title": {
+              "tr-TR": "Sil"
+            },
+            "icon": "delete",
+            "typeName": "ContextItemArgs",
+            "args": {
+              "children": []
+            },
+            "extendedArgs": {
+              "id": "1e450e98-1c14-f870-76b1-71f7d58aff89"
+            },
+            "visible": true
+          }
+        ],
+        "clientEvents": [
+          {
+            "name": "OnItemClick",
+            "methodName": "ctxPartnerMenu_OnItemClick"
+          },
+          {
+            "name": "OnShowing",
+            "methodName": "ctxPartnerMenu_OnShowing"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "ContextMenu1"
+          }
+        },
+        "name": "ctxPartnerMenu",
+        "ddl": {
+          "name": "ContextMenu1"
+        },
+        "commitId": 12,
+        "controlType": "ContextMenu",
+        "controlId": "990b3702-ec0c-2906-967d-6fc623afa2b3",
+        "dataSourceType": "static"
+      },
+      "viewProperties": {},
+      "id": "ctxPartnerMenu",
+      "type": "ContextMenu"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "PartnerUserLast2_Archive": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Row1"
+            ],
+            "id": "PartnerUserLast2_Archive",
+            "type": "Form"
+          },
+          "Row1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "PartnerUserLast2_Archive",
+            "items": [
+              "Column1"
+            ],
+            "id": "Row1",
+            "type": "Section"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Row1",
+            "items": [
+              "PartnerUserLast2_Archive_Grid",
+              "FILTERPARAMS"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "PartnerUserLast2_Archive_Grid": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "PartnerUserLast2_Archive_Grid",
+            "type": "DataGrid"
+          },
+          "FILTERPARAMS": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "FILTERPARAMS",
+            "type": "TextBox"
+          }
+        },
+        "ghostItems": {
+          "ctxPartnerMenu": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "PartnerUserLast2_Archive",
+            "items": [],
+            "id": "ctxPartnerMenu",
+            "type": "ContextMenu"
+          }
+        }
+      },
+      "result": [
+        "PartnerUserLast2_Archive"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

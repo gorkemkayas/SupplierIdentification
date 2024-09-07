@@ -1,0 +1,1082 @@
+{
+  "data": {
+    "ACTIVITY1": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Aktiflik"
+          },
+          "horizontalAlign": "center",
+          "markSettings": {
+            "char": ""
+          }
+        },
+        "ddl": {
+          "name": "ACTIVITY1"
+        },
+        "name": "ACTIVITY1",
+        "value": true,
+        "commitId": 53,
+        "controlId": "4609e8bd-8181-b061-1a1b-e9bbad4d306d",
+        "required": false,
+        "controlType": "Switch"
+      },
+      "viewProperties": {},
+      "id": "ACTIVITY1",
+      "type": "Switch"
+    },
+    "UserPassword": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Şifre"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "UserPassword",
+        "ddl": {
+          "name": "USERPASSWORD"
+        },
+        "commitId": 19,
+        "placeholder": {
+          "tr-TR": "Şifrenizi Giriniz..."
+        },
+        "controlId": "74dfeea6-a8dc-61d3-1644-e19422953138",
+        "required": true,
+        "controlType": "Password"
+      },
+      "viewProperties": {},
+      "id": "UserPassword",
+      "type": "Password"
+    },
+    "UserPhoneNumber": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Telefon"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "maxLength": 20,
+        "name": "UserPhoneNumber",
+        "mask": "+\\90\\ (999) 999 99 99",
+        "ddl": {
+          "size": 20,
+          "name": "USERPHONENUMBER"
+        },
+        "value": "",
+        "commitId": 73,
+        "placeholder": {
+          "tr-TR": "Telefon Numaranızı Giriniz...",
+          "en-US": "Please sign firm number...",
+          "ru-RU": ""
+        },
+        "controlType": "MaskInput",
+        "controlId": "5100d4e6-08c4-b4c8-4051-c233303b0ef1",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "UserPhoneNumber",
+      "type": "MaskInput"
+    },
+    "UserTitle": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Ünvan"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "UserTitle",
+        "ddl": {
+          "name": "USERTITLE"
+        },
+        "commitId": 17,
+        "placeholder": {
+          "tr-TR": "Ünvanınızı Giriniz..."
+        },
+        "controlId": "5481cd1b-e714-2959-2390-b92059dd413a",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "UserTitle",
+      "type": "TextBox"
+    },
+    "UserSurname": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Soyad"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "UserSurname",
+        "ddl": {
+          "name": "USERSURNAME"
+        },
+        "commitId": 20,
+        "placeholder": {
+          "tr-TR": "Soyadınızı Giriniz..."
+        },
+        "controlId": "d6394b34-f0fa-fa3a-9e95-d7704566b056",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "UserSurname",
+      "type": "TextBox"
+    },
+    "UserEmail": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "E-Posta"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "UserEmail",
+        "ddl": {
+          "name": "USEREMAIL"
+        },
+        "commitId": 22,
+        "placeholder": {
+          "tr-TR": "E-Posta Adresinizi Giriniz..."
+        },
+        "controlId": "0dd094f2-caa2-efc2-2eec-01d3c04c5648",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "UserEmail",
+      "type": "TextBox"
+    },
+    "PartnerUser": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnToolbarButtonClicked",
+            "methodName": "PartnerUser_OnToolbarButtonClicked"
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "Partner Ekleme Sayfası",
+            "en-US": "PartnerUser",
+            "ru-RU": "PartnerUser",
+            "az-Latn-AZ": "PartnerUser"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "tr-TR": "Kaydet",
+              "en-US": "Save",
+              "ru-RU": "Сохранить"
+            },
+            "validate": true
+          }
+        ],
+        "name": "PartnerUser",
+        "ddl": {
+          "name": "PartnerUser"
+        },
+        "text": {
+          "tr-TR": "PartnerUser",
+          "en-US": "PartnerUser",
+          "ru-RU": "PartnerUser",
+          "az-Latn-AZ": "PartnerUser"
+        },
+        "commitId": 13,
+        "rules": {
+          "FormRequiredFields": {
+            "id": "FormRequiredFields",
+            "name": "FormRequiredFields",
+            "enabled": true,
+            "orderNo": 0,
+            "statements": [
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_StACTIVITY1tement_default_UserName",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToACTIVITY1sterMessage_default_UserName",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "UserName_Required",
+                    "messages": {
+                      "tr-TR": "Ad: Gerekli alan",
+                      "en-US": "Ad: Required field",
+                      "ru-RU": "Ad: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "UserName"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_UserName",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_defACTIVITY1ult_UserName_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "UserName",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_defACTIVITY1ult_UserName",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerUser",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_StACTIVITY1tement_default_UserEmail",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToACTIVITY1sterMessage_default_UserEmail",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "UserEmail_Required",
+                    "messages": {
+                      "tr-TR": "E-Posta: Gerekli alan",
+                      "en-US": "E-Posta: Required field",
+                      "ru-RU": "E-Posta: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "UserEmail"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_UserEmail",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_defACTIVITY1ult_UserEmail_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "UserEmail",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_defACTIVITY1ult_UserEmail",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerUser",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_StACTIVITY1tement_default_UserTitle",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToACTIVITY1sterMessage_default_UserTitle",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "UserTitle_Required",
+                    "messages": {
+                      "tr-TR": "Ünvan: Gerekli alan",
+                      "en-US": "Ünvan: Required field",
+                      "ru-RU": "Ünvan: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "UserTitle"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_UserTitle",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_defACTIVITY1ult_UserTitle_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "UserTitle",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_defACTIVITY1ult_UserTitle",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerUser",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_StACTIVITY1tement_default_UserPhoneNumber",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToACTIVITY1sterMessage_default_UserPhoneNumber",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "UserPhoneNumber_Required",
+                    "messages": {
+                      "tr-TR": "Telefon: Gerekli alan",
+                      "en-US": "Telefon: Required field",
+                      "ru-RU": "Telefon: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "UserPhoneNumber"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_UserPhoneNumber",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_defACTIVITY1ult_UserPhoneNumber_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "UserPhoneNumber",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_defACTIVITY1ult_UserPhoneNumber",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerUser",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_StACTIVITY1tement_default_UserPassword",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToACTIVITY1sterMessage_default_UserPassword",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "UserPassword_Required",
+                    "messages": {
+                      "tr-TR": "Şifre: Gerekli alan",
+                      "en-US": "Şifre: Required field",
+                      "ru-RU": "Şifre: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "UserPassword"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_UserPassword",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_defACTIVITY1ult_UserPassword_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "UserPassword",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_defACTIVITY1ult_UserPassword",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerUser",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_StACTIVITY1tement_default_PartnerGroups",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToACTIVITY1sterMessage_default_PartnerGroups",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "PartnerGroups_Required",
+                    "messages": {
+                      "tr-TR": "Kullanıcı Grupları: Gerekli alan",
+                      "en-US": "Kullanıcı Grupları: Required field",
+                      "ru-RU": "Kullanıcı Grupları: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "PartnerGroups"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_PartnerGroups",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_defACTIVITY1ult_PartnerGroups_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerGroups",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_defACTIVITY1ult_PartnerGroups",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerUser",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_StACTIVITY1tement_default_UserSurname",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToACTIVITY1sterMessage_default_UserSurname",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "UserSurname_Required",
+                    "messages": {
+                      "tr-TR": "Soyad: Gerekli alan",
+                      "en-US": "Soyad: Required field",
+                      "ru-RU": "Soyad: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "UserSurname"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_UserSurname",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_defACTIVITY1ult_UserSurname_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "UserSurname",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_defACTIVITY1ult_UserSurname",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "PartnerUser",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "FormRequiredToACTIVITY1sterMessage_default_UserName",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "UserName_Required",
+                "messages": {
+                  "tr-TR": "Ad: Gerekli alan",
+                  "en-US": "Ad: Required field",
+                  "ru-RU": "Ad: Обязательное поле"
+                },
+                "highlightList": [
+                  "UserName"
+                ]
+              },
+              {
+                "id": "FormRequiredToACTIVITY1sterMessage_default_UserEmail",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "UserEmail_Required",
+                "messages": {
+                  "tr-TR": "E-Posta: Gerekli alan",
+                  "en-US": "E-Posta: Required field",
+                  "ru-RU": "E-Posta: Обязательное поле"
+                },
+                "highlightList": [
+                  "UserEmail"
+                ]
+              },
+              {
+                "id": "FormRequiredToACTIVITY1sterMessage_default_UserTitle",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "UserTitle_Required",
+                "messages": {
+                  "tr-TR": "Ünvan: Gerekli alan",
+                  "en-US": "Ünvan: Required field",
+                  "ru-RU": "Ünvan: Обязательное поле"
+                },
+                "highlightList": [
+                  "UserTitle"
+                ]
+              },
+              {
+                "id": "FormRequiredToACTIVITY1sterMessage_default_UserPhoneNumber",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "UserPhoneNumber_Required",
+                "messages": {
+                  "tr-TR": "Telefon: Gerekli alan",
+                  "en-US": "Telefon: Required field",
+                  "ru-RU": "Telefon: Обязательное поле"
+                },
+                "highlightList": [
+                  "UserPhoneNumber"
+                ]
+              },
+              {
+                "id": "FormRequiredToACTIVITY1sterMessage_default_UserPassword",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "UserPassword_Required",
+                "messages": {
+                  "tr-TR": "Şifre: Gerekli alan",
+                  "en-US": "Şifre: Required field",
+                  "ru-RU": "Şifre: Обязательное поле"
+                },
+                "highlightList": [
+                  "UserPassword"
+                ]
+              },
+              {
+                "id": "FormRequiredToACTIVITY1sterMessage_default_PartnerGroups",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "PartnerGroups_Required",
+                "messages": {
+                  "tr-TR": "Kullanıcı Grupları: Gerekli alan",
+                  "en-US": "Kullanıcı Grupları: Required field",
+                  "ru-RU": "Kullanıcı Grupları: Обязательное поле"
+                },
+                "highlightList": [
+                  "PartnerGroups"
+                ]
+              },
+              {
+                "id": "FormRequiredToACTIVITY1sterMessage_default_UserSurname",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "UserSurname_Required",
+                "messages": {
+                  "tr-TR": "Soyad: Gerekli alan",
+                  "en-US": "Soyad: Required field",
+                  "ru-RU": "Soyad: Обязательное поле"
+                },
+                "highlightList": [
+                  "UserSurname"
+                ]
+              }
+            ],
+            "triggerEvents": [
+              "PartnerUser.client.OnBeforeSave",
+              "PartnerUser.server.OnBeforeSave",
+              "PartnerUser.client.OnToolbarButtonClicked",
+              "PartnerUser.server.OnToolbarButtonClicked"
+            ]
+          }
+        },
+        "controlType": "Form",
+        "controlId": "9c8da61a-0fbf-4726-af07-d08993bc7525"
+      },
+      "viewProperties": {},
+      "id": "PartnerUser",
+      "type": "Form"
+    },
+    "UserName": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Ad"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "UserName",
+        "ddl": {
+          "name": "USERNAME"
+        },
+        "commitId": 7,
+        "placeholder": {
+          "tr-TR": "Adınızı Giriniz..."
+        },
+        "controlId": "696d35ec-3496-ae79-afe6-95e408585b26",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "UserName",
+      "type": "TextBox"
+    },
+    "PartnerGroups": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Yetkili"
+            },
+            "selected": false,
+            "icon": "managers"
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "Yetkili Değil"
+            },
+            "selected": false,
+            "icon": "user"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Kullanıcı Grupları"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "PartnerGroups",
+        "ddl": {
+          "name": "PARTNERGROUPS",
+          "allowNull": false
+        },
+        "commitId": 30,
+        "placeholder": {
+          "tr-TR": "Kullanıcı Grubu Seçiniz..."
+        },
+        "controlType": "ComboBox",
+        "controlId": "c6873200-0d23-5a6c-e429-0e5ff0346e32",
+        "dataSourceType": "static",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "PartnerGroups",
+      "type": "ComboBox"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "ACTIVITY1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "ACTIVITY1",
+            "type": "Switch"
+          },
+          "UserPassword": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "UserPassword",
+            "type": "Password"
+          },
+          "UserPhoneNumber": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "UserPhoneNumber",
+            "type": "MaskInput"
+          },
+          "Section1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "PartnerUser",
+            "items": [
+              "Column1",
+              "Column2"
+            ],
+            "id": "Section1",
+            "type": "Section"
+          },
+          "UserTitle": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "UserTitle",
+            "type": "TextBox"
+          },
+          "Section2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "PartnerUser",
+            "items": [
+              "Column3"
+            ],
+            "id": "Section2",
+            "type": "Section"
+          },
+          "UserSurname": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "UserSurname",
+            "type": "TextBox"
+          },
+          "UserEmail": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "UserEmail",
+            "type": "TextBox"
+          },
+          "PartnerUser": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Section1",
+              "Section2"
+            ],
+            "id": "PartnerUser",
+            "type": "Form"
+          },
+          "UserName": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "UserName",
+            "type": "TextBox"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section1",
+            "items": [
+              "UserName"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "PartnerGroups": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "PartnerGroups",
+            "type": "ComboBox"
+          },
+          "Column2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section1",
+            "items": [
+              "UserSurname"
+            ],
+            "id": "Column2",
+            "type": "Column"
+          },
+          "Column3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "500",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section2",
+            "items": [
+              "UserEmail",
+              "UserTitle",
+              "UserPhoneNumber",
+              "UserPassword",
+              "PartnerGroups",
+              "ACTIVITY1"
+            ],
+            "id": "Column3",
+            "type": "Column"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "PartnerUser"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

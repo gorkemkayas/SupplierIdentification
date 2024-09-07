@@ -1,0 +1,29 @@
+.certificateGold {
+    background-color: gold;
+    border-radius: 8px;
+    padding: 5px;
+    color: black;
+}
+.certificateBronze {
+    background-color: brown;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}
+.certificateSilver {
+    background-color: rgb(148, 147, 147);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}
+.certificatePlatinum {
+    background-color: rgb(233, 230, 230);
+    border-radius: 8px;
+    padding: 5px;
+    color: brown;
+}
+.certificateStandard {
+    border-radius: 8px;
+    padding: 5px;
+    color: black;
+}

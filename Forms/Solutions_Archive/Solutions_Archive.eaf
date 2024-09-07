@@ -1,0 +1,660 @@
+{
+  "data": {
+    "Solutions_Archive": {
+      "properties": {
+        "ddl": {
+          "name": "Solutions_Archive",
+          "prefix": "SupplierIdentification"
+        },
+        "text": {
+          "tr-TR": "Solutions_Archive",
+          "en-US": "Solutions_Archive",
+          "ru-RU": "Solutions_Archive",
+          "az-Latn-AZ": "Solutions_Archive"
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Solutions_Archive",
+            "en-US": "Solutions_Archive",
+            "ru-RU": "Solutions_Archive",
+            "az-Latn-AZ": "Solutions_Archive"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "New",
+            "enabled": true,
+            "name": "New",
+            "caption": {
+              "tr-TR": "Yeni"
+            },
+            "icon": "add"
+          }
+        ],
+        "name": "Solutions_Archive",
+        "controlId": "9e251096-b820-40bc-90ad-3d184800a79e",
+        "controlType": "Form",
+        "commitId": 0
+      },
+      "viewProperties": {},
+      "id": "Solutions_Archive",
+      "type": "Form"
+    },
+    "Solutions_Archive_Grid": {
+      "properties": {
+        "dataSource": {
+          "name": "Solutions_Archive_DataSource",
+          "fileId": "<DataSource-Solutions_Archive_DataSource>",
+          "connectionType": 1
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Çözümler",
+            "en-US": "Solutions_Archive_Grid",
+            "ru-RU": "Solutions_Archive_Grid",
+            "az-Latn-AZ": "Solutions_Archive_Grid"
+          },
+          "visible": false
+        },
+        "filtering": {
+          "enabled": true,
+          "headerFilterEnabled": true
+        },
+        "name": "Solutions_Archive_Grid",
+        "ddl": {
+          "name": "Solutions_Archive_Grid"
+        },
+        "commitId": 5,
+        "controlType": "DataGrid",
+        "controlId": "0e7a8585-0c47-499f-b948-9c1ca41138fb",
+        "columns": [
+          {
+            "name": "View",
+            "caption": {
+              "tr-TR": "View",
+              "en-US": "View",
+              "ru-RU": "View",
+              "az-Latn-AZ": "View"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": false,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlId": "View",
+              "name": "View",
+              "ddl": {
+                "name": "View"
+              }
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "View_action_button",
+              "text": {
+                "tr-TR": "View",
+                "en-US": "View",
+                "ru-RU": "View",
+                "az-Latn-AZ": "View"
+              },
+              "title": {
+                "tr-TR": "View",
+                "en-US": "View",
+                "ru-RU": "View",
+                "az-Latn-AZ": "View"
+              },
+              "icon": "search",
+              "typeName": "OpenFormArgs",
+              "args": {
+                "typeName": "OpenFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": [],
+                "documentId": "[DOCUMENTID]",
+                "editable": false
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "none",
+              "columnName": "View",
+              "size": 0,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "actionButton",
+              "format": ""
+            },
+            "editType": "actionButton",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "0"
+          },
+          {
+            "name": "DOCUMENTID",
+            "caption": {
+              "tr-TR": "DOCUMENTID",
+              "en-US": "DOCUMENTID",
+              "ru-RU": "DOCUMENTID",
+              "az-Latn-AZ": "DOCUMENTID"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": false,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "DOCUMENTID",
+              "controlId": "DOCUMENTID",
+              "controlType": "NumberBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": true,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "DOCUMENTID",
+                "allowNull": true,
+                "type": "Decimal"
+              },
+              "text": "",
+              "step": 1,
+              "precision": 0,
+              "useThousandSeparator": false,
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": true,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "decimal",
+              "columnName": "DOCUMENTID",
+              "size": 0,
+              "nullable": true,
+              "precision": 0
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "numberBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "1"
+          },
+          {
+            "name": "SOLUTIONNAME",
+            "caption": {
+              "tr-TR": "Çözüm",
+              "en-US": "SOLUTIONNAME",
+              "ru-RU": "SOLUTIONNAME",
+              "az-Latn-AZ": "SOLUTIONNAME"
+            },
+            "width": "50%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "SOLUTIONNAME",
+              "controlId": "SOLUTIONNAME",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "SOLUTIONNAME",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "SOLUTIONNAME",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "2"
+          },
+          {
+            "name": "SolutionDefinition",
+            "caption": {
+              "tr-TR": "Çözüm Açıklaması",
+              "en-US": "SolutionDefinition",
+              "ru-RU": "SolutionDefinition",
+              "az-Latn-AZ": "SolutionDefinition"
+            },
+            "width": "50%",
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": false,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "name": "SolutionDefinition",
+              "controlId": "SolutionDefinition",
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120,
+                  "height": 34
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false,
+                "allowAutoClear": true
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "SolutionDefinition",
+                "allowNull": true,
+                "size": 500,
+                "type": "String"
+              },
+              "text": "",
+              "maxLength": 500,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "sizeType": "middle"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": false,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "SolutionDefinition",
+              "size": 500,
+              "nullable": true,
+              "precision": null
+            },
+            "formatType": {
+              "type": "label",
+              "format": ""
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "isGeneratedColumn": true,
+            "key": "3"
+          }
+        ]
+      },
+      "viewProperties": {},
+      "id": "Solutions_Archive_Grid",
+      "type": "DataGrid"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "Solutions_Archive": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Row1"
+            ],
+            "id": "Solutions_Archive",
+            "type": "Form"
+          },
+          "Row1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Solutions_Archive",
+            "items": [
+              "Column1"
+            ],
+            "id": "Row1",
+            "type": "Section"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Row1",
+            "items": [
+              "Solutions_Archive_Grid"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "Solutions_Archive_Grid": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "Solutions_Archive_Grid",
+            "type": "DataGrid"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "Solutions_Archive"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

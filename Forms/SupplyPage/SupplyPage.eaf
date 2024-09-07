@@ -1,0 +1,4655 @@
+{
+  "data": {
+    "Divider9": {
+      "properties": {
+        "clientVisible": false,
+        "caption": {
+          "text": {
+            "tr-TR": "Divider9"
+          }
+        },
+        "name": "Divider9",
+        "controlId": "daaf7e0a-8766-d571-6812-ca6b620b971a",
+        "ddl": {
+          "name": "Divider9"
+        },
+        "commitId": 4,
+        "controlType": "Divider"
+      },
+      "viewProperties": {},
+      "id": "Divider9",
+      "type": "Divider"
+    },
+    "Label4": {
+      "properties": {
+        "caption": {
+          "font": {
+            "size": 12
+          },
+          "text": {
+            "tr-TR": "Label4"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label4",
+        "ddl": {
+          "name": "Label4"
+        },
+        "text": {
+          "tr-TR": "Hizmet Sağlayıcı, Müşteri'ye aşağıda belirtilen yazılımsal çözümler ve hizmetlerden  sağlayacaktır:",
+          "en-US": "Label4",
+          "ru-RU": "Label4"
+        },
+        "commitId": 53,
+        "controlId": "6ce5cc78-7d67-4b5d-c4b6-3faa25769d39",
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label4",
+      "type": "Label"
+    },
+    "Label5": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label5"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label5",
+        "ddl": {
+          "name": "Label5"
+        },
+        "text": {
+          "tr-TR": "Bimser Synergy, eBA, QDMS, Ensemble ve QGRC",
+          "en-US": "Label5",
+          "ru-RU": "Label5"
+        },
+        "commitId": 39,
+        "controlId": "1b852170-7278-3625-cfc8-b94ccd625ee1",
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label5",
+      "type": "Label"
+    },
+    "ACTIVITY2": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Aktiflik"
+          },
+          "horizontalAlign": "center"
+        },
+        "clientVisible": false,
+        "name": "ACTIVITY2",
+        "ddl": {
+          "name": "ACTIVITY2"
+        },
+        "value": true,
+        "commitId": 17,
+        "controlType": "Switch",
+        "controlId": "194d19a7-71f3-40f5-f390-3736577d41aa",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "ACTIVITY2",
+      "type": "Switch"
+    },
+    "RelatedDocuments1": {
+      "properties": {
+        "showPath": false,
+        "path": "GorkemProjects/SupplierIdentification/asset/Uygulama Dosyaları",
+        "caption": {
+          "position": "left",
+          "text": {
+            "tr-TR": "RelatedDocuments1"
+          },
+          "visible": false
+        },
+        "showCreateDate": true,
+        "name": "RelatedDocuments1",
+        "advancedEdit": true,
+        "targetId": "744622",
+        "ddl": {
+          "name": "RelatedDocuments1"
+        },
+        "commitId": 20,
+        "controlType": "RelatedDocuments",
+        "controlId": "b2ebbb94-677e-d551-848f-c8a21d49f3fd",
+        "categories": [
+          {
+            "categoryId": "afb5f46c-1cd9-8d5c-30d7-610715881073",
+            "name": {
+              "tr-TR": "Uygulama Dosyaları"
+            },
+            "description": {
+              "tr-TR": "Uygulama Dosyaları"
+            },
+            "minFilesCount": 0,
+            "maxFilesCount": null,
+            "enabled": true,
+            "maxFileSize": null,
+            "targetId": 744622,
+            "path": "GorkemProjects/SupplierIdentification/asset/Uygulama Dosyaları",
+            "allowedFileExtensions": [
+              "EAF",
+              "CS",
+              "TS",
+              "CSS",
+              "EPROJ",
+              "JS",
+              "JSON",
+              "TXT",
+              "XML",
+              "LOG",
+              "DOC",
+              "DOCM",
+              "DOCX",
+              "DOTM",
+              "DOTX",
+              "POTM",
+              "PPAM",
+              "PPSM",
+              "PPT",
+              "PPTM",
+              "PPTX",
+              "XLAM",
+              "SLDM",
+              "XLS",
+              "XLSB",
+              "XLSM",
+              "XLSX",
+              "XLTM",
+              "XLTX"
+            ]
+          }
+        ]
+      },
+      "viewProperties": {},
+      "id": "RelatedDocuments1",
+      "type": "RelatedDocuments"
+    },
+    "Header1": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Hizmet Sağlayıcı Firma İmzası"
+          }
+        },
+        "name": "Header1",
+        "controlId": "14990c86-ebfc-f531-d9d8-b44de44919ac",
+        "ddl": {
+          "name": "Header1"
+        },
+        "text": {
+          "tr-TR": "Hizmet Sağlayıcı Firma İmzası",
+          "en-US": "Header1",
+          "ru-RU": "Header1"
+        },
+        "commitId": 4,
+        "controlType": "Header"
+      },
+      "viewProperties": {},
+      "id": "Header1",
+      "type": "Header"
+    },
+    "CompatibleVersion": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Uyumlu Versiyon"
+          }
+        },
+        "name": "CompatibleVersion",
+        "ddl": {
+          "name": "COMPATIBLEVERSION"
+        },
+        "commitId": 13,
+        "controlId": "98a57b5f-c3b3-3e44-a0b7-bff73f3d46b8",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "CompatibleVersion",
+      "type": "TextBox"
+    },
+    "RelatedDocuments2": {
+      "properties": {
+        "path": "GorkemProjects/SupplierIdentification/asset/Görsel Dosyalar",
+        "caption": {
+          "text": {
+            "tr-TR": "RelatedDocuments2"
+          },
+          "visible": false
+        },
+        "showCreateDate": true,
+        "name": "RelatedDocuments2",
+        "targetId": "744623",
+        "ddl": {
+          "name": "RelatedDocuments2"
+        },
+        "commitId": 3,
+        "controlType": "RelatedDocuments",
+        "controlId": "7d626dd7-a8d4-831a-f3c1-984cec570f6e",
+        "categories": [
+          {
+            "categoryId": "395ce84d-1d47-b390-5a02-44fcf51c9964",
+            "name": {
+              "tr-TR": "Görsel Dosyalar"
+            },
+            "description": {
+              "tr-TR": "Görsel Dosyalar"
+            },
+            "minFilesCount": 0,
+            "maxFilesCount": null,
+            "enabled": true,
+            "maxFileSize": null,
+            "targetId": 744623,
+            "path": "GorkemProjects/SupplierIdentification/asset/Görsel Dosyalar",
+            "allowedFileExtensions": [
+              "JPEG",
+              "JPG",
+              "PNG",
+              "TIFF",
+              "WEBP",
+              "MP4",
+              "PDF"
+            ]
+          }
+        ]
+      },
+      "viewProperties": {},
+      "id": "RelatedDocuments2",
+      "type": "RelatedDocuments"
+    },
+    "Header2": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Header2"
+          }
+        },
+        "name": "Header2",
+        "controlId": "b02676cb-7917-7d4d-1d07-7fa87a30943c",
+        "ddl": {
+          "name": "Header2"
+        },
+        "text": {
+          "tr-TR": "Hizmet Talep Eden Firma İmzası",
+          "en-US": "Header2",
+          "ru-RU": "Header2"
+        },
+        "commitId": 2,
+        "controlType": "Header"
+      },
+      "viewProperties": {},
+      "id": "Header2",
+      "type": "Header"
+    },
+    "SupplyTab": {
+      "properties": {
+        "items": [
+          {
+            "key": "Tab_6",
+            "enabled": true,
+            "selected": true,
+            "title": {
+              "tr-TR": "Detay Bilgi"
+            },
+            "icon": "empty-icon",
+            "orderNo": 0
+          },
+          {
+            "key": "Tab_7",
+            "enabled": true,
+            "selected": false,
+            "title": {
+              "tr-TR": "Uygulama Dosyası"
+            },
+            "icon": "empty-icon",
+            "orderNo": 1
+          },
+          {
+            "key": "Tab_3",
+            "enabled": true,
+            "selected": false,
+            "title": {
+              "tr-TR": "Galeri"
+            },
+            "icon": "empty-icon",
+            "orderNo": 2
+          },
+          {
+            "key": "Tab_2",
+            "enabled": true,
+            "selected": false,
+            "title": {
+              "tr-TR": "Uygulama Dosyası"
+            },
+            "icon": "empty-icon",
+            "orderNo": 3
+          },
+          {
+            "key": "Tab_4",
+            "enabled": true,
+            "selected": false,
+            "title": {
+              "tr-TR": "Ücretlendirme"
+            },
+            "icon": "empty-icon",
+            "orderNo": 4
+          },
+          {
+            "key": "Tab_5",
+            "enabled": true,
+            "selected": false,
+            "title": {
+              "tr-TR": "Şartlar ve Koşullar"
+            },
+            "icon": "empty-icon",
+            "orderNo": 5
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "Tabs1"
+          }
+        },
+        "name": "SupplyTab",
+        "ddl": {
+          "name": "Tabs1"
+        },
+        "selectedItem": {
+          "key": "Tab_6",
+          "enabled": true,
+          "selected": true,
+          "title": {
+            "tr-TR": "Detay Bilgi"
+          },
+          "icon": "empty-icon",
+          "orderNo": 0
+        },
+        "style": {
+          "height": 1250
+        },
+        "commitId": 75,
+        "controlType": "Tabs",
+        "selectedIndex": 0,
+        "controlId": "9a7ba5a4-1c85-6921-8198-4a0e6403eff2"
+      },
+      "viewProperties": {},
+      "id": "SupplyTab",
+      "type": "Tabs"
+    },
+    "SectorSelection": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Altyapı"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "Bilgi & İletişim Teknolojileri"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "3",
+            "value": "3",
+            "text": {
+              "tr-TR": "Enerji"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "4",
+            "value": "4",
+            "text": {
+              "tr-TR": "Finansal Yatırımlar ve Startuplar"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "5",
+            "value": "5",
+            "text": {
+              "tr-TR": "Kimya"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "6",
+            "value": "6",
+            "text": {
+              "tr-TR": "Lojistik ve Ulaştırma"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "7",
+            "value": "7",
+            "text": {
+              "tr-TR": "Makine"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "8",
+            "value": "8",
+            "text": {
+              "tr-TR": "Otomotiv"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "9",
+            "value": "9",
+            "text": {
+              "tr-TR": "Savunma & Havacılık"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "10",
+            "value": "10",
+            "text": {
+              "tr-TR": "Turizm"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "11",
+            "value": "11",
+            "text": {
+              "tr-TR": "Gayrimenkul"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Sektör"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "SectorSelection",
+        "ddl": {
+          "name": "SECTORSELECTION",
+          "allowNull": false
+        },
+        "commitId": 15,
+        "placeholder": {
+          "tr-TR": "Sektör Seçiniz..."
+        },
+        "controlType": "ComboBox",
+        "controlId": "b46a078f-46be-22f7-f338-1803be566017",
+        "dataSourceType": "static",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "SectorSelection",
+      "type": "ComboBox"
+    },
+    "SummaryInformation": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Özet Bilgi"
+          },
+          "verticalAlign": "top",
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "maxLength": 1000,
+        "name": "SummaryInformation",
+        "ddl": {
+          "size": 1000,
+          "name": "SUMMARYINFORMATION"
+        },
+        "showCharacterCounter": true,
+        "commitId": 21,
+        "placeholder": {
+          "tr-TR": "Özet Açıklama Giriniz..."
+        },
+        "controlType": "TextArea",
+        "controlId": "0a05a838-11f0-18c2-e496-59fe8671a2e6",
+        "enableMultiLanguageText": true,
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "SummaryInformation",
+      "type": "TextArea"
+    },
+    "Header3": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Header3"
+          }
+        },
+        "name": "Header3",
+        "ddl": {
+          "name": "Header3"
+        },
+        "text": {
+          "tr-TR": "Hizmet Bedelinin Belirlenmesi",
+          "en-US": "Header3",
+          "ru-RU": "Header3"
+        },
+        "font": {
+          "size": 20
+        },
+        "commitId": 8,
+        "controlType": "Header",
+        "textAlign": "center",
+        "controlId": "3a250658-05c2-6dae-71e0-729cb5d32f83"
+      },
+      "viewProperties": {},
+      "id": "Header3",
+      "type": "Header"
+    },
+    "Header4": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Header4"
+          }
+        },
+        "name": "Header4",
+        "controlId": "4774cf0a-e32d-3c09-1336-d56e61ccff23",
+        "ddl": {
+          "name": "Header4"
+        },
+        "text": {
+          "tr-TR": "Ücret Onayı",
+          "en-US": "Header4",
+          "ru-RU": "Header4"
+        },
+        "controlType": "Header",
+        "commitId": 0
+      },
+      "viewProperties": {},
+      "id": "Header4",
+      "type": "Header"
+    },
+    "Tab_2": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_2",
+        "ddl": {
+          "name": "Tab_2"
+        },
+        "orderNo": 3,
+        "commitId": 6,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Uygulama Dosyası"
+        },
+        "controlId": "78575acc-f199-36ec-3885-09624c848d0b",
+        "icon": "empty-icon",
+        "selected": false
+      },
+      "viewProperties": {},
+      "id": "Tab_2",
+      "type": "Tab"
+    },
+    "HotfixValue": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "NumberBox3"
+          },
+          "visible": false
+        },
+        "name": "HotfixValue",
+        "ddl": {
+          "name": "HOTFIXVALUE"
+        },
+        "commitId": 15,
+        "min": 0,
+        "placeholder": {
+          "tr-TR": "Hotfix"
+        },
+        "controlType": "NumberBox",
+        "controlId": "f5ccf421-4788-f6f5-6df9-e1bfe2e3b991",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "HotfixValue",
+      "type": "NumberBox"
+    },
+    "Tab_3": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_3",
+        "ddl": {
+          "name": "Tab_3"
+        },
+        "orderNo": 2,
+        "commitId": 3,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Galeri"
+        },
+        "controlId": "1ca806d1-ecca-7f79-8fd7-42ffd417f16e",
+        "icon": "empty-icon",
+        "selected": false
+      },
+      "viewProperties": {},
+      "id": "Tab_3",
+      "type": "Tab"
+    },
+    "Tab_4": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_4",
+        "ddl": {
+          "name": "Tab_4"
+        },
+        "orderNo": 4,
+        "commitId": 2,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Ücretlendirme"
+        },
+        "controlId": "e58ccf7c-4479-2aeb-b886-12322e500da5",
+        "icon": "empty-icon",
+        "selected": false
+      },
+      "viewProperties": {},
+      "id": "Tab_4",
+      "type": "Tab"
+    },
+    "Tab_5": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_5",
+        "ddl": {
+          "name": "Tab_5"
+        },
+        "orderNo": 5,
+        "commitId": 2,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Şartlar ve Koşullar"
+        },
+        "controlId": "e63444e1-5c46-ad28-da8f-48c10e455d11",
+        "icon": "empty-icon",
+        "selected": false
+      },
+      "viewProperties": {},
+      "id": "Tab_5",
+      "type": "Tab"
+    },
+    "Tab_6": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_6",
+        "ddl": {
+          "name": "Tab_6"
+        },
+        "orderNo": 0,
+        "commitId": 4,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Detay Bilgi"
+        },
+        "controlId": "a52ee11f-283e-e72e-ef0d-26c4ee3d2652",
+        "icon": "empty-icon",
+        "selected": true
+      },
+      "viewProperties": {},
+      "id": "Tab_6",
+      "type": "Tab"
+    },
+    "Tab_7": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_7",
+        "ddl": {
+          "name": "Tab_7"
+        },
+        "orderNo": 1,
+        "commitId": 3,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Uygulama Dosyası"
+        },
+        "controlId": "96a46e0d-fe1d-f5b9-3531-e6bb82b44e93",
+        "icon": "empty-icon",
+        "selected": false
+      },
+      "viewProperties": {},
+      "id": "Tab_7",
+      "type": "Tab"
+    },
+    "CheckBox1": {
+      "properties": {
+        "clientEnabled": false,
+        "caption": {
+          "text": {
+            "tr-TR": "Onaylıyorum"
+          },
+          "horizontalAlign": "center"
+        },
+        "ddl": {
+          "name": "CheckBox1"
+        },
+        "name": "CheckBox1",
+        "controlId": "825a3167-aae5-d8cc-11fd-2a724b480be0",
+        "required": false,
+        "commitId": 12,
+        "controlType": "CheckBox"
+      },
+      "viewProperties": {},
+      "id": "CheckBox1",
+      "type": "CheckBox"
+    },
+    "CategorySelection": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Yazılım Desteği"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "Danışmanlık"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Kategori"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "CategorySelection",
+        "ddl": {
+          "name": "CATEGORYSELECTION",
+          "allowNull": false
+        },
+        "commitId": 22,
+        "placeholder": {
+          "tr-TR": "Kategori Seçiniz..."
+        },
+        "controlType": "ComboBox",
+        "controlId": "10d0b896-7c2b-b06a-faf9-052c89523e1f",
+        "dataSourceType": "static",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "CategorySelection",
+      "type": "ComboBox"
+    },
+    "NumberBox1": {
+      "properties": {
+        "useThousandSeparator": true,
+        "caption": {
+          "text": {
+            "tr-TR": "NumberBox1"
+          },
+          "visible": false
+        },
+        "name": "NumberBox1",
+        "ddl": {
+          "name": "NumberBox1"
+        },
+        "commitId": 2,
+        "min": 0,
+        "controlType": "NumberBox",
+        "controlId": "b418f164-a9c8-df2d-5753-569532760f99",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "NumberBox1",
+      "type": "NumberBox"
+    },
+    "Activity": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Aktiflik Durumu"
+          },
+          "horizontalAlign": "center",
+          "markSettings": {
+            "char": ""
+          }
+        },
+        "clientVisible": false,
+        "name": "Activity",
+        "ddl": {
+          "name": "ACTIVITY"
+        },
+        "value": true,
+        "commitId": 12,
+        "controlType": "Switch",
+        "controlId": "d1b704e9-cd2e-e028-fa80-55cc7d03c095",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "Activity",
+      "type": "Switch"
+    },
+    "Label20": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label20"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label20",
+        "controlId": "d407bcfc-e012-5f09-2238-d82c2e24fbd8",
+        "ddl": {
+          "name": "Label20"
+        },
+        "text": {
+          "tr-TR": "Müşteri: Müşteri, Hizmet Sağlayıcı'nın hizmetlerini gerektiği şekilde yerine getirmemesi durumunda, yazılı bildirimde bulunarak anlaşmayı feshedebilir.",
+          "en-US": "Label20",
+          "ru-RU": "Label20"
+        },
+        "commitId": 2,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label20",
+      "type": "Label"
+    },
+    "Label21": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label21"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label21",
+        "controlId": "7738baf6-eee9-576f-f995-3cc0862eab22",
+        "ddl": {
+          "name": "Label21"
+        },
+        "text": {
+          "tr-TR": "Hizmet Sağlayıcı: Hizmet Sağlayıcı, Müşteri'nin ödeme yükümlülüklerini yerine getirmemesi durumunda, yazılı bildirimde bulunarak anlaşmayı feshedebilir.",
+          "en-US": "Label21",
+          "ru-RU": "Label21"
+        },
+        "commitId": 4,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label21",
+      "type": "Label"
+    },
+    "Label10": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label10"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label10",
+        "ddl": {
+          "name": "Label10"
+        },
+        "text": {
+          "tr-TR": "2. Sorumluluklar",
+          "en-US": "Label10",
+          "ru-RU": "Label10"
+        },
+        "commitId": 3,
+        "controlId": "7bef6cb2-4489-6ef6-ad0e-b124ea97d806",
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label10",
+      "type": "Label"
+    },
+    "Label22": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label22"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label22",
+        "controlId": "492d5d4f-82f1-573a-402a-41175db8373e",
+        "ddl": {
+          "name": "Label22"
+        },
+        "text": {
+          "tr-TR": "6. Mücbir Sebepler",
+          "en-US": "Label22",
+          "ru-RU": "Label22"
+        },
+        "commitId": 1,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label22",
+      "type": "Label"
+    },
+    "DateRangePicker1": {
+      "properties": {
+        "disabledDateType": "past",
+        "caption": {
+          "text": {
+            "tr-TR": "1. Taksit"
+          }
+        },
+        "dateLimitType": "disabled",
+        "endDate": {
+          "allowEmpty": false
+        },
+        "name": "DateRangePicker1",
+        "ddl": {
+          "name": "DateRangePicker1"
+        },
+        "startDate": {
+          "allowEmpty": false
+        },
+        "commitId": 18,
+        "controlType": "DateRangePicker",
+        "title": {
+          "tr-TR": ""
+        },
+        "controlId": "e19eec5a-b43a-c438-9110-3d89cafe9ddf"
+      },
+      "viewProperties": {},
+      "id": "DateRangePicker1",
+      "type": "DateRangePicker"
+    },
+    "ComboBox1": {
+      "properties": {
+        "items": [
+          {
+            "key": "Euro",
+            "value": "Euro",
+            "text": {
+              "tr-TR": "Euro"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "Türk Lirası",
+            "value": "Türk Lirası",
+            "text": {
+              "tr-TR": "Türk Lirası"
+            },
+            "selected": true,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "Dolar",
+            "value": "Dolar",
+            "text": {
+              "tr-TR": "Dolar"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "Dinar",
+            "value": "Dinar",
+            "text": {
+              "tr-TR": "Dinar"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "ComboBox1"
+          },
+          "visible": false
+        },
+        "name": "ComboBox1",
+        "ddl": {
+          "name": "ComboBox1"
+        },
+        "commitId": 2,
+        "controlType": "ComboBox",
+        "controlId": "fee17700-b3b4-5739-4077-441aace06ebe",
+        "dataSourceType": "static",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "ComboBox1",
+      "type": "ComboBox"
+    },
+    "Label11": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label11"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label11",
+        "controlId": "40f6e477-bc8e-522c-51c0-9b5b0a1153ce",
+        "ddl": {
+          "name": "Label11"
+        },
+        "text": {
+          "tr-TR": "Hizmet Sağlayıcı: Hizmet Sağlayıcı, anlaşmada belirtilen hizmetleri profesyonel bir şekilde ve zamanında sunmayı taahhüt eder.",
+          "en-US": "Label11",
+          "ru-RU": "Label11"
+        },
+        "commitId": 3,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label11",
+      "type": "Label"
+    },
+    "Label23": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label23"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label23",
+        "controlId": "904076ab-2f37-e65c-43c3-6ff91e7f68e5",
+        "ddl": {
+          "name": "Label23"
+        },
+        "text": {
+          "tr-TR": "Taraflardan herhangi biri, doğal afetler, savaş, terör saldırıları, grevler veya diğer kontrol edilemeyen durumlar nedeniyle yükümlülüklerini yerine getiremezse, bu durumdan sorumlu tutulamaz.",
+          "en-US": "Label23",
+          "ru-RU": "Label23"
+        },
+        "commitId": 2,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label23",
+      "type": "Label"
+    },
+    "DateRangePicker2": {
+      "properties": {
+        "disabledDateType": "past",
+        "caption": {
+          "text": {
+            "tr-TR": "2. Taksit"
+          }
+        },
+        "dateLimitType": "disabled",
+        "name": "DateRangePicker2",
+        "ddl": {
+          "name": "DateRangePicker2"
+        },
+        "commitId": 6,
+        "controlId": "cd3b732d-e328-03c9-734a-02ba058c152b",
+        "controlType": "DateRangePicker"
+      },
+      "viewProperties": {},
+      "id": "DateRangePicker2",
+      "type": "DateRangePicker"
+    },
+    "Label12": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label12"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label12",
+        "controlId": "3fc3cfb7-4b35-a192-27b5-aea6d9aac96a",
+        "ddl": {
+          "name": "Label12"
+        },
+        "text": {
+          "tr-TR": " Müşteri: Müşteri, gerekli bilgileri zamanında ve eksiksiz olarak Hizmet Sağlayıcı'ya iletmeyi kabul eder.",
+          "en-US": "Label12",
+          "ru-RU": "Label12"
+        },
+        "commitId": 2,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label12",
+      "type": "Label"
+    },
+    "SolutionSelect": {
+      "properties": {
+        "dataFields": [
+          {
+            "name": "DOCUMENTID",
+            "type": "number"
+          },
+          {
+            "name": "SOLUTIONNAME",
+            "type": "string"
+          },
+          {
+            "name": "SolutionDefinition",
+            "type": "string"
+          }
+        ],
+        "clientEvents": [
+          {
+            "name": "OnClick",
+            "methodName": "SolutionSelect_OnClick"
+          }
+        ],
+        "dataSource": {
+          "fileId": "<DataSource-Solutions_Archive_DataSource>",
+          "displayExpr": [
+            "SOLUTIONNAME"
+          ],
+          "valueExpr": "DOCUMENTID",
+          "name": "Solutions_Archive_DataSource",
+          "runAtServer": true,
+          "useClientCachedData": false,
+          "connectionType": 1,
+          "displayFormat": "{{ SOLUTIONNAME }}",
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Çözüm Adı"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "SolutionSelect",
+        "ddl": {
+          "name": "SOLUTIONSELECT",
+          "allowNull": false
+        },
+        "iconExpr": "",
+        "commitId": 37,
+        "placeholder": {
+          "tr-TR": "Çözüm Seçiniz.."
+        },
+        "controlType": "ComboBox",
+        "controlId": "935d744e-e222-39f5-c85c-4972866adb58",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "SolutionSelect",
+      "type": "ComboBox"
+    },
+    "Label24": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label24"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label24",
+        "controlId": "1a154ca6-6927-c02c-03f3-e6e13ddbc4ae",
+        "ddl": {
+          "name": "Label24"
+        },
+        "text": {
+          "tr-TR": "7. Uyuşmazlıkların Çözümü",
+          "en-US": "Label24",
+          "ru-RU": "Label24"
+        },
+        "commitId": 3,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label24",
+      "type": "Label"
+    },
+    "DateRangePicker3": {
+      "properties": {
+        "disabledDateType": "past",
+        "caption": {
+          "text": {
+            "tr-TR": "3. Taksit"
+          }
+        },
+        "dateLimitType": "disabled",
+        "name": "DateRangePicker3",
+        "ddl": {
+          "name": "DateRangePicker3"
+        },
+        "commitId": 15,
+        "controlId": "b3ebeb8a-8276-6c68-a3ac-9f24d37d1be5",
+        "controlType": "DateRangePicker"
+      },
+      "viewProperties": {},
+      "id": "DateRangePicker3",
+      "type": "DateRangePicker"
+    },
+    "FileSelector1": {
+      "properties": {
+        "selectionTargetPath": "GorkemProjects/SupplierIdentification/asset/Uygulama Dosyaları",
+        "caption": {
+          "text": {
+            "tr-TR": "Uygulama Dosyaları"
+          },
+          "showColon": true
+        },
+        "name": "FileSelector1",
+        "ddl": {
+          "name": "FileSelector1"
+        },
+        "uploadTargetId": "744622",
+        "allowView": true,
+        "commitId": 44,
+        "uploadTargetPath": "GorkemProjects/SupplierIdentification/asset/Uygulama Dosyaları",
+        "controlType": "FileSelector",
+        "selectionTargetId": "744622",
+        "allowedFileExtensions": [
+          "EAF",
+          "EPROJ",
+          "TS",
+          "CS",
+          "CSS",
+          "JS",
+          "JSON",
+          "TXT",
+          "XML",
+          "LOG",
+          "DOC",
+          "DOCM",
+          "DOCX",
+          "DOTM",
+          "DOTX",
+          "POTM",
+          "PPAM",
+          "PPSM",
+          "PPT",
+          "PPTM",
+          "PPTX",
+          "SLDM",
+          "XLAM",
+          "XLS",
+          "XLSB",
+          "XLSM",
+          "XLSX",
+          "XLTM",
+          "XLTX",
+          "PDF"
+        ],
+        "controlId": "04436f6c-0507-ecc4-7bdf-48f5aa56dba9"
+      },
+      "viewProperties": {},
+      "id": "FileSelector1",
+      "type": "FileSelector"
+    },
+    "Label13": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label13"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label13",
+        "controlId": "4969c2ed-9445-f9b2-8168-3ab85e534c96",
+        "ddl": {
+          "name": "Label13"
+        },
+        "text": {
+          "tr-TR": "3. Gizlilik",
+          "en-US": "Label13",
+          "ru-RU": "Label13"
+        },
+        "commitId": 3,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label13",
+      "type": "Label"
+    },
+    "HTMLDetails": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Detay Bilgi"
+          },
+          "size": {
+            "height": 25
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "HTMLDetails",
+        "ddl": {
+          "name": "HTMLDETAILS"
+        },
+        "showCharacterCounter": true,
+        "commitId": 43,
+        "placeholder": {
+          "tr-TR": "Detaylı Açıklama Giriniz..."
+        },
+        "controlType": "HTMLTextBox",
+        "controlId": "d0eaa026-ead4-bfd4-e21e-5bb0645602d9",
+        "enableMultiLanguageText": true,
+        "charCounterMax": 4000
+      },
+      "viewProperties": {},
+      "id": "HTMLDetails",
+      "type": "HTMLTextBox"
+    },
+    "Label25": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label25"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label25",
+        "controlId": "fbba874f-a2ae-bd1c-2c6d-e0ea44db7594",
+        "ddl": {
+          "name": "Label25"
+        },
+        "text": {
+          "tr-TR": "Taraflar arasında doğabilecek uyuşmazlıklar, öncelikle dostane bir şekilde çözülmeye çalışılacaktır.",
+          "en-US": "Label25",
+          "ru-RU": "Label25"
+        },
+        "commitId": 2,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label25",
+      "type": "Label"
+    },
+    "ImageSelector1": {
+      "properties": {
+        "selectionTargetPath": "GorkemProjects/SupplierIdentification/asset/Görsel Dosyalar",
+        "caption": {
+          "text": {
+            "tr-TR": "Görsel Ekleme"
+          },
+          "showColon": true
+        },
+        "name": "ImageSelector1",
+        "ddl": {
+          "name": "IMAGESELECTOR1"
+        },
+        "uploadTargetId": "744623",
+        "commitId": 27,
+        "uploadTargetPath": "GorkemProjects/SupplierIdentification/asset/Görsel Dosyalar",
+        "controlType": "FileSelector",
+        "selectionTargetId": "744623",
+        "allowedFileExtensions": [
+          "JPEG",
+          "JPG",
+          "PNG",
+          "TIFF",
+          "WEBP",
+          "MP4",
+          "PDF"
+        ],
+        "controlId": "11d0f2dc-bc57-8359-df77-16e5f2c29323"
+      },
+      "viewProperties": {},
+      "id": "ImageSelector1",
+      "type": "FileSelector"
+    },
+    "Label14": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label14"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label14",
+        "controlId": "74ecf93b-ace1-07f3-e548-007a407f8213",
+        "ddl": {
+          "name": "Label14"
+        },
+        "text": {
+          "tr-TR": "Hizmet Sağlayıcı, Müşteri'ye ait tüm bilgileri gizli tutmayı ve bu bilgileri yalnızca hizmetin sağlanması amacıyla kullanmayı kabul eder.",
+          "en-US": "Label14",
+          "ru-RU": "Label14"
+        },
+        "commitId": 2,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label14",
+      "type": "Label"
+    },
+    "Label26": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label26"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label26",
+        "controlId": "b68adbbc-bf62-529a-f161-47f1110e40be",
+        "ddl": {
+          "name": "Label26"
+        },
+        "text": {
+          "tr-TR": "Anlaşmazlığın çözülmemesi durumunda, Şehir Mahkemeleri ve İcra Daireleri yetkili olacaktır.",
+          "en-US": "Label26",
+          "ru-RU": "Label26"
+        },
+        "commitId": 10,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label26",
+      "type": "Label"
+    },
+    "Divider1": {
+      "properties": {
+        "name": "Divider1",
+        "controlId": "e9bfcaaa-ac36-b4b5-376f-24e5f39f00d1",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider1"
+          }
+        },
+        "ddl": {
+          "name": "Divider1"
+        }
+      },
+      "viewProperties": {},
+      "id": "Divider1",
+      "type": "Divider"
+    },
+    "Tags1": {
+      "properties": {
+        "caption": {
+          "position": "left",
+          "text": {
+            "tr-TR": "Etiketler"
+          },
+          "verticalAlign": "top",
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "Tags1",
+        "ddl": {
+          "name": "TAGS1"
+        },
+        "commitId": 11,
+        "editing": {
+          "showAddCommand": true
+        },
+        "controlId": "f32043de-893d-e563-cff5-f516d1305729",
+        "controlType": "DataGrid"
+      },
+      "viewProperties": {},
+      "id": "Tags1",
+      "type": "DataGrid"
+    },
+    "MajorValue": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Versiyon"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "MajorValue",
+        "ddl": {
+          "name": "MAJORVALUE"
+        },
+        "commitId": 26,
+        "min": 1,
+        "placeholder": {
+          "tr-TR": "Major"
+        },
+        "controlType": "NumberBox",
+        "controlId": "6402baf1-a6bb-aa52-c0a7-1e048d3629d6",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "MajorValue",
+      "type": "NumberBox"
+    },
+    "Label15": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label15"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label15",
+        "controlId": "5b5b6bfc-dff9-0989-1a52-d33d41a8a508",
+        "ddl": {
+          "name": "Label15"
+        },
+        "text": {
+          "tr-TR": "Bu gizlilik yükümlülüğü, anlaşmanın sona ermesinden sonra da devam eder.",
+          "en-US": "Label15",
+          "ru-RU": "Label15"
+        },
+        "commitId": 2,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label15",
+      "type": "Label"
+    },
+    "Label27": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label27"
+          }
+        },
+        "name": "Label27",
+        "ddl": {
+          "name": "Label27"
+        },
+        "text": {
+          "tr-TR": "Anlaşmaya varılan çözüm ve hizmetlere binaen belirlenen ücret :",
+          "en-US": "Label27",
+          "ru-RU": "Label27"
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "commitId": 43,
+        "controlType": "Label",
+        "textAlign": "center",
+        "controlId": "c661e1d1-01e4-c1c6-b87c-6cffedea4ca8"
+      },
+      "viewProperties": {},
+      "id": "Label27",
+      "type": "Label"
+    },
+    "Divider2": {
+      "properties": {
+        "name": "Divider2",
+        "controlId": "46456f00-3737-599d-cd98-8979d6425459",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider2"
+          }
+        },
+        "ddl": {
+          "name": "Divider2"
+        }
+      },
+      "viewProperties": {},
+      "id": "Divider2",
+      "type": "Divider"
+    },
+    "Signature1": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Hizmet Sağlayıcı İmzası"
+          },
+          "visible": false,
+          "verticalAlign": "bottom"
+        },
+        "name": "Signature1",
+        "controlId": "cea7ad42-4a31-e1a6-057f-4d0f32d892fb",
+        "ddl": {
+          "name": "Signature1"
+        },
+        "commitId": 21,
+        "controlType": "Signature"
+      },
+      "viewProperties": {},
+      "id": "Signature1",
+      "type": "Signature"
+    },
+    "Label16": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label16"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label16",
+        "controlId": "11c74787-dda3-1d2e-3948-0bea0c62bfd1",
+        "ddl": {
+          "name": "Label16"
+        },
+        "text": {
+          "tr-TR": "4. Ödeme Şartları",
+          "en-US": "Label16",
+          "ru-RU": "Label16"
+        },
+        "commitId": 1,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label16",
+      "type": "Label"
+    },
+    "Label28": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label28"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label28",
+        "controlId": "30d1b5a8-f103-34cb-3619-99efc4849207",
+        "ddl": {
+          "name": "Label28"
+        },
+        "text": {
+          "tr-TR": "Müşteri, Hizmet Sağlayıcı tarafından sağlanacak hizmetler karşılığında üst kısımda belirlenen  tutardaki ücreti kabul ettiğini ve bu ücreti ödeme yükümlülüğünü üstlendiğini onaylar. Müşteri, bu ücretin sözleşme kapsamındaki tüm hizmetleri kapsadığını ve ek hizmet taleplerinin, taraflar arasında yapılacak ek anlaşmalarla belirlenmesi gerektiğini kabul eder.",
+          "en-US": "Label28",
+          "ru-RU": "Label28"
+        },
+        "commitId": 8,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label28",
+      "type": "Label"
+    },
+    "Divider3": {
+      "properties": {
+        "name": "Divider3",
+        "controlId": "524b742a-af85-4fe8-7545-df110a8481a0",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider3"
+          }
+        },
+        "ddl": {
+          "name": "Divider3"
+        }
+      },
+      "viewProperties": {},
+      "id": "Divider3",
+      "type": "Divider"
+    },
+    "Signature2": {
+      "properties": {
+        "clientVisible": false,
+        "caption": {
+          "text": {
+            "tr-TR": "Signature2"
+          },
+          "visible": false
+        },
+        "name": "Signature2",
+        "controlId": "5d7b20d5-12fb-e6fa-5b30-e02922a954d6",
+        "ddl": {
+          "name": "Signature2"
+        },
+        "commitId": 1,
+        "controlType": "Signature"
+      },
+      "viewProperties": {},
+      "id": "Signature2",
+      "type": "Signature"
+    },
+    "Label17": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label17"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label17",
+        "controlId": "2a7a7e3e-675e-2c82-1ae3-12aff36a471d",
+        "ddl": {
+          "name": "Label17"
+        },
+        "text": {
+          "tr-TR": "Müşteri, Hizmet Sağlayıcı'ya hizmetlerin karşılığında belirtilen toplam tutarı ödemeyi kabul eder.",
+          "en-US": "Label17",
+          "ru-RU": "Label17"
+        },
+        "commitId": 15,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label17",
+      "type": "Label"
+    },
+    "Divider4": {
+      "properties": {
+        "name": "Divider4",
+        "controlId": "7fbd521f-5aa4-ffb4-b824-853a56aaf768",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider4"
+          }
+        },
+        "ddl": {
+          "name": "Divider4"
+        }
+      },
+      "viewProperties": {},
+      "id": "Divider4",
+      "type": "Divider"
+    },
+    "ApplicationName": {
+      "properties": {
+        "items": [
+          {
+            "key": "Synergy_1",
+            "value": "Synergy_1",
+            "text": {
+              "tr-TR": "grafiksel raporlama (BI – Dashboard)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "Synergy_2",
+            "value": "Synergy_2",
+            "text": {
+              "tr-TR": "belge yönetimi (EBYS)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "Synergy_3",
+            "value": "Synergy_3",
+            "text": {
+              "tr-TR": "Capture (Sayısallaştırma)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "eBA_1",
+            "value": "eBA_1",
+            "text": {
+              "tr-TR": "İş Süreçleri Otomasyonu"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "eBA_2",
+            "value": "eBA_2",
+            "text": {
+              "tr-TR": "Doküman Yönetim Sistemi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "eBA_3",
+            "value": "eBA_3",
+            "text": {
+              "tr-TR": "Elektronik Belge Yönetim Sistemi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "eBA_4",
+            "value": "eBA_4",
+            "text": {
+              "tr-TR": "Sayısallaştırma Yönetimi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "eBA_5",
+            "value": "eBA_5",
+            "text": {
+              "tr-TR": "Dashboard (Grafiksel Raporlama)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "QDMS_1",
+            "value": "QDMS_1",
+            "text": {
+              "tr-TR": "Entegre Yönetim Sistemi (IMS)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "QDMS_2",
+            "value": "QDMS_2",
+            "text": {
+              "tr-TR": "Kalite Yönetim Sistemi (QMS)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "QDMS_3",
+            "value": "QDMS_3",
+            "text": {
+              "tr-TR": "Çevre ve İş Sağlığı Güvenliği Yönetim Sistemi (EHS)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "QDMS_4",
+            "value": "QDMS_4",
+            "text": {
+              "tr-TR": "Bilgi Güvenliği Yönetim Sistemi (ISMS)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "BEAM_1",
+            "value": "BEAM_1",
+            "text": {
+              "tr-TR": "Varlık Yönetimi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "BEAM_2",
+            "value": "BEAM_2",
+            "text": {
+              "tr-TR": "Bakım Onarım Yönetimi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "BEAM_3",
+            "value": "BEAM_3",
+            "text": {
+              "tr-TR": "Malzeme Yönetimi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "BEAM_4",
+            "value": "BEAM_4",
+            "text": {
+              "tr-TR": "Personel Yönetimi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "BEAM_5",
+            "value": "BEAM_5",
+            "text": {
+              "tr-TR": "Satın Alma Yönetimi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "Ensemble_1",
+            "value": "Ensemble_1",
+            "text": {
+              "tr-TR": "Performans Yönetimi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "Ensemble_2",
+            "value": "Ensemble_2",
+            "text": {
+              "tr-TR": "Balanced Score Card (BSC)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "QGRC_1",
+            "value": "QGRC_1",
+            "text": {
+              "tr-TR": "Baz Modül (QGRC Server)"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          },
+          {
+            "key": "QGRC_2",
+            "value": "QGRC_2",
+            "text": {
+              "tr-TR": "QGRC Çözüm Paketi"
+            },
+            "selected": false,
+            "icon": "empty-icon"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Sistem Adı"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "ApplicationName",
+        "ddl": {
+          "name": "APPLICATIONNAME",
+          "allowNull": false
+        },
+        "commitId": 18,
+        "placeholder": {
+          "tr-TR": "Sistem Seçiniz..."
+        },
+        "controlType": "ComboBox",
+        "controlId": "287fe8cc-6d03-1f86-df58-2b3431540706",
+        "dataSourceType": "static",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "ApplicationName",
+      "type": "ComboBox"
+    },
+    "Label18": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label18"
+          }
+        },
+        "font": {
+          "bold": false,
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label18",
+        "controlId": "eb04fe91-5f6b-4dd2-9310-5a4e50b27b39",
+        "ddl": {
+          "name": "Label18"
+        },
+        "text": {
+          "tr-TR": "Ödemeler, aşağıdaki ödeme planına göre yapılacaktır:",
+          "en-US": "Label18",
+          "ru-RU": "Label18"
+        },
+        "commitId": 2,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label18",
+      "type": "Label"
+    },
+    "Divider5": {
+      "properties": {
+        "name": "Divider5",
+        "controlId": "5b10420c-36da-6780-2c4f-3283657ee2ff",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider5"
+          }
+        },
+        "ddl": {
+          "name": "Divider5"
+        }
+      },
+      "viewProperties": {},
+      "id": "Divider5",
+      "type": "Divider"
+    },
+    "MinorValue": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "NumberBox2"
+          },
+          "visible": false
+        },
+        "name": "MinorValue",
+        "ddl": {
+          "name": "MINORVALUE"
+        },
+        "commitId": 13,
+        "min": 0,
+        "placeholder": {
+          "tr-TR": "Minor"
+        },
+        "controlType": "NumberBox",
+        "controlId": "5e589d06-8fb2-5394-1f34-ef9dc0d458a0",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "MinorValue",
+      "type": "NumberBox"
+    },
+    "Label19": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label19"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label19",
+        "controlId": "57de9174-5011-8f25-53c7-7aa8b93ad375",
+        "ddl": {
+          "name": "Label19"
+        },
+        "text": {
+          "tr-TR": "5. Fesih Koşulları",
+          "en-US": "Label19",
+          "ru-RU": "Label19"
+        },
+        "commitId": 1,
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label19",
+      "type": "Label"
+    },
+    "Divider6": {
+      "properties": {
+        "name": "Divider6",
+        "controlId": "b5113066-027f-ed35-cb25-c2f8d9c25c21",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider6"
+          }
+        },
+        "ddl": {
+          "name": "Divider6"
+        }
+      },
+      "viewProperties": {},
+      "id": "Divider6",
+      "type": "Divider"
+    },
+    "Label1": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label1"
+          },
+          "horizontalAlign": "center"
+        },
+        "name": "Label1",
+        "ddl": {
+          "name": "Label1"
+        },
+        "text": {
+          "tr-TR": "ŞARTLAR VE KOŞULLAR",
+          "en-US": "Label1",
+          "ru-RU": "Label1"
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)",
+          "size": 20
+        },
+        "commitId": 12,
+        "controlType": "Label",
+        "textAlign": "center",
+        "title": {
+          "tr-TR": ""
+        },
+        "controlId": "39bad8b7-0f33-21ad-327e-0009d34debdc"
+      },
+      "viewProperties": {},
+      "id": "Label1",
+      "type": "Label"
+    },
+    "SupplyPage": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnToolbarButtonClicked",
+            "methodName": "SupplyPage_OnToolbarButtonClicked"
+          },
+          {
+            "name": "OnMessageReceived",
+            "methodName": "SupplyPage_OnMessageReceived"
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "Uygulama Ekleme Sayfası",
+            "en-US": "SupplyPage",
+            "ru-RU": "SupplyPage",
+            "az-Latn-AZ": "SupplyPage"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "tr-TR": "Kaydet",
+              "en-US": "Save",
+              "ru-RU": "Сохранять",
+              "az-Latn-AZ": "Yadda Saxla"
+            },
+            "validate": true
+          },
+          {
+            "key": "AddNewSolution",
+            "enabled": false,
+            "name": "AddNewSolution",
+            "caption": {
+              "tr-TR": "Yeni Çözüm Ekle"
+            },
+            "icon": "add"
+          }
+        ],
+        "name": "SupplyPage",
+        "ddl": {
+          "name": "SupplyPage"
+        },
+        "text": {
+          "tr-TR": "SupplyPage",
+          "en-US": "SupplyPage",
+          "ru-RU": "SupplyPage",
+          "az-Latn-AZ": "SupplyPage"
+        },
+        "commitId": 33,
+        "rules": {
+          "FormRequiredFields": {
+            "id": "FormRequiredFields",
+            "name": "FormRequiredFields",
+            "enabled": true,
+            "orderNo": 0,
+            "statements": [
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_SolutionSelect",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_SolutionSelect",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "SolutionSelect_Required",
+                    "messages": {
+                      "tr-TR": "Çözüm Adı: Gerekli alan",
+                      "en-US": "Çözüm Adı: Required field",
+                      "ru-RU": "Çözüm Adı: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "SolutionSelect"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_SolutionSelect",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_SolutionSelect_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SolutionSelect",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_SolutionSelect",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SupplyPage",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_ApplicationName",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_ApplicationName",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "ApplicationName_Required",
+                    "messages": {
+                      "tr-TR": "Sistem Adı: Gerekli alan",
+                      "en-US": "Sistem Adı: Required field",
+                      "ru-RU": "Sistem Adı: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "ApplicationName"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_ApplicationName",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_ApplicationName_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "ApplicationName",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_ApplicationName",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SupplyPage",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_SectorSelection",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_SectorSelection",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "SectorSelection_Required",
+                    "messages": {
+                      "tr-TR": "Sektör: Gerekli alan",
+                      "en-US": "Sektör: Required field",
+                      "ru-RU": "Sektör: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "SectorSelection"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_SectorSelection",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_SectorSelection_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SectorSelection",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_SectorSelection",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SupplyPage",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_SummaryInformation",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_SummaryInformation",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "SummaryInformation_Required",
+                    "messages": {
+                      "tr-TR": "Özet Bilgi: Gerekli alan",
+                      "en-US": "Özet Bilgi: Required field",
+                      "ru-RU": "Özet Bilgi: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "SummaryInformation"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_SummaryInformation",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_SummaryInformation_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SummaryInformation",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_SummaryInformation",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SupplyPage",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_CompatibleVersion",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_CompatibleVersion",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "CompatibleVersion_Required",
+                    "messages": {
+                      "tr-TR": "Uyumlu Versiyon: Gerekli alan",
+                      "en-US": "Uyumlu Versiyon: Required field",
+                      "ru-RU": "Uyumlu Versiyon: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "CompatibleVersion"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_CompatibleVersion",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_CompatibleVersion_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "CompatibleVersion",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_CompatibleVersion",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SupplyPage",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_CategorySelection",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_CategorySelection",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "CategorySelection_Required",
+                    "messages": {
+                      "tr-TR": "Kategori: Gerekli alan",
+                      "en-US": "Kategori: Required field",
+                      "ru-RU": "Kategori: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "CategorySelection"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_CategorySelection",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_CategorySelection_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "CategorySelection",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_CategorySelection",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SupplyPage",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "FormRequiredToasterMessage_default_SolutionSelect",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "SolutionSelect_Required",
+                "messages": {
+                  "tr-TR": "Çözüm Adı: Gerekli alan",
+                  "en-US": "Çözüm Adı: Required field",
+                  "ru-RU": "Çözüm Adı: Обязательное поле"
+                },
+                "highlightList": [
+                  "SolutionSelect"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_ApplicationName",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "ApplicationName_Required",
+                "messages": {
+                  "tr-TR": "Sistem Adı: Gerekli alan",
+                  "en-US": "Sistem Adı: Required field",
+                  "ru-RU": "Sistem Adı: Обязательное поле"
+                },
+                "highlightList": [
+                  "ApplicationName"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_SectorSelection",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "SectorSelection_Required",
+                "messages": {
+                  "tr-TR": "Sektör: Gerekli alan",
+                  "en-US": "Sektör: Required field",
+                  "ru-RU": "Sektör: Обязательное поле"
+                },
+                "highlightList": [
+                  "SectorSelection"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_SummaryInformation",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "SummaryInformation_Required",
+                "messages": {
+                  "tr-TR": "Özet Bilgi: Gerekli alan",
+                  "en-US": "Özet Bilgi: Required field",
+                  "ru-RU": "Özet Bilgi: Обязательное поле"
+                },
+                "highlightList": [
+                  "SummaryInformation"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_CompatibleVersion",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "CompatibleVersion_Required",
+                "messages": {
+                  "tr-TR": "Uyumlu Versiyon: Gerekli alan",
+                  "en-US": "Uyumlu Versiyon: Required field",
+                  "ru-RU": "Uyumlu Versiyon: Обязательное поле"
+                },
+                "highlightList": [
+                  "CompatibleVersion"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_CategorySelection",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "CategorySelection_Required",
+                "messages": {
+                  "tr-TR": "Kategori: Gerekli alan",
+                  "en-US": "Kategori: Required field",
+                  "ru-RU": "Kategori: Обязательное поле"
+                },
+                "highlightList": [
+                  "CategorySelection"
+                ]
+              }
+            ],
+            "triggerEvents": [
+              "SupplyPage.client.OnBeforeSave",
+              "SupplyPage.server.OnBeforeSave",
+              "SupplyPage.client.OnToolbarButtonClicked",
+              "SupplyPage.server.OnToolbarButtonClicked"
+            ]
+          }
+        },
+        "controlType": "Form",
+        "controlId": "fcac7dab-13f8-40e3-b6ec-27fa28ab618a"
+      },
+      "viewProperties": {},
+      "id": "SupplyPage",
+      "type": "Form"
+    },
+    "Divider7": {
+      "properties": {
+        "name": "Divider7",
+        "controlId": "1108294c-6e90-45ed-7b5c-1c09e68c87e6",
+        "controlType": "Divider",
+        "caption": {
+          "text": {
+            "tr-TR": "Divider7"
+          }
+        },
+        "ddl": {
+          "name": "Divider7"
+        }
+      },
+      "viewProperties": {},
+      "id": "Divider7",
+      "type": "Divider"
+    },
+    "Properties1": {
+      "properties": {
+        "caption": {
+          "position": "left",
+          "text": {
+            "tr-TR": "Özellikler"
+          },
+          "verticalAlign": "top",
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "Properties1",
+        "ddl": {
+          "name": "PROPERTIES1"
+        },
+        "commitId": 9,
+        "editing": {
+          "showAddCommand": true
+        },
+        "controlId": "249a6dd0-ed0e-305e-ed8b-7a48112e1423",
+        "columns": [
+          {
+            "name": "Definition1",
+            "caption": {
+              "tr-TR": "Tanım"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "NewColumn1",
+                "allowNull": true,
+                "size": 50,
+                "type": "String"
+              },
+              "tabIndex": 0,
+              "text": "",
+              "placeholder": {},
+              "textAlign": "left",
+              "maxLength": 50,
+              "isSecretData": false,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "showCharacterCounter": false,
+              "controlId": "Definition1",
+              "name": "Definition1"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": true,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "NewColumn1"
+            },
+            "formatType": {
+              "format": "",
+              "type": "label"
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "key": "0"
+          }
+        ],
+        "controlType": "DataGrid"
+      },
+      "viewProperties": {},
+      "id": "Properties1",
+      "type": "DataGrid"
+    },
+    "Label2": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label2"
+          }
+        },
+        "name": "Label2",
+        "ddl": {
+          "name": "Label2"
+        },
+        "text": {
+          "tr-TR": "Bu anlaşma, 'Bimser Çözüm' (bundan sonra 'Hizmet Sağlayıcı' olarak anılacaktır) ile hizmet talep eden firma/kişi (bundan sonra 'Müşteri' olarak anılacaktır) arasında yapılmıştır.",
+          "en-US": "Label2",
+          "ru-RU": "Label2"
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "commitId": 31,
+        "controlType": "Label",
+        "textAlign": "center",
+        "controlId": "49d8cb5f-4524-3799-ab16-4b4f3164b5be"
+      },
+      "viewProperties": {},
+      "id": "Label2",
+      "type": "Label"
+    },
+    "Divider8": {
+      "properties": {
+        "visible": false,
+        "caption": {
+          "text": {
+            "tr-TR": "Divider8"
+          }
+        },
+        "name": "Divider8",
+        "controlId": "8ea8ed8c-ce92-bf30-ca94-4115db6f67be",
+        "ddl": {
+          "name": "Divider8"
+        },
+        "commitId": 4,
+        "controlType": "Divider"
+      },
+      "viewProperties": {},
+      "id": "Divider8",
+      "type": "Divider"
+    },
+    "Label3": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Label3"
+          }
+        },
+        "font": {
+          "color": "rgb(0, 0, 0)"
+        },
+        "name": "Label3",
+        "ddl": {
+          "name": "Label3"
+        },
+        "text": {
+          "tr-TR": "1. Hizmetin Kapsamı",
+          "en-US": "Label3",
+          "ru-RU": "Label3"
+        },
+        "commitId": 6,
+        "controlId": "83c9333c-1fad-552f-72e0-69ddd351e77c",
+        "controlType": "Label"
+      },
+      "viewProperties": {},
+      "id": "Label3",
+      "type": "Label"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "Divider9": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column16",
+            "items": [],
+            "id": "Divider9",
+            "type": "Divider"
+          },
+          "Column6": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "33%",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section4",
+            "items": [
+              "MinorValue"
+            ],
+            "id": "Column6",
+            "type": "Column"
+          },
+          "Label4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label4",
+            "type": "Label"
+          },
+          "Column7": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "33%",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section4",
+            "items": [
+              "HotfixValue"
+            ],
+            "id": "Column7",
+            "type": "Column"
+          },
+          "Label5": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label5",
+            "type": "Label"
+          },
+          "Column8": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section5",
+            "items": [
+              "Tags1",
+              "Activity"
+            ],
+            "id": "Column8",
+            "type": "Column"
+          },
+          "ACTIVITY2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "ACTIVITY2",
+            "type": "Switch"
+          },
+          "Column9": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section6",
+            "items": [
+              "Label1",
+              "Label2",
+              "Label3",
+              "Label4",
+              "Label5",
+              "Divider7",
+              "Label10",
+              "Label11",
+              "Label12",
+              "Divider1",
+              "Label13",
+              "Label14",
+              "Label15",
+              "Divider2",
+              "Label16",
+              "Label17",
+              "Label18",
+              "DateRangePicker1",
+              "DateRangePicker2",
+              "DateRangePicker3",
+              "Divider3",
+              "Label19",
+              "Label20",
+              "Label21",
+              "Divider4",
+              "Label22",
+              "Label23",
+              "Divider5",
+              "Label24",
+              "Label25",
+              "Label26",
+              "Divider6"
+            ],
+            "id": "Column9",
+            "type": "Column"
+          },
+          "Header1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column10",
+            "items": [],
+            "id": "Header1",
+            "type": "Header"
+          },
+          "CompatibleVersion": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "CompatibleVersion",
+            "type": "TextBox"
+          },
+          "Section10": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_4",
+            "items": [
+              "Column16"
+            ],
+            "id": "Section10",
+            "type": "Section"
+          },
+          "Header2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column11",
+            "items": [],
+            "id": "Header2",
+            "type": "Header"
+          },
+          "Section11": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_4",
+            "items": [],
+            "id": "Section11",
+            "type": "Section"
+          },
+          "SupplyTab": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [
+              "Tab_7",
+              "Tab_6",
+              "Tab_5",
+              "Tab_4",
+              "Tab_3"
+            ],
+            "id": "SupplyTab",
+            "type": "Tabs"
+          },
+          "SectorSelection": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "SectorSelection",
+            "type": "ComboBox"
+          },
+          "SummaryInformation": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "SummaryInformation",
+            "type": "TextArea"
+          },
+          "Header3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column12",
+            "items": [],
+            "id": "Header3",
+            "type": "Header"
+          },
+          "Section12": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_3",
+            "items": [
+              "Column18"
+            ],
+            "id": "Section12",
+            "type": "Section"
+          },
+          "Header4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column16",
+            "items": [],
+            "id": "Header4",
+            "type": "Header"
+          },
+          "Section13": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_7",
+            "items": [
+              "Column17"
+            ],
+            "id": "Section13",
+            "type": "Section"
+          },
+          "Tab_2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SupplyTab",
+            "items": [],
+            "id": "Tab_2",
+            "type": "Tab"
+          },
+          "HotfixValue": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column7",
+            "items": [],
+            "id": "HotfixValue",
+            "type": "NumberBox"
+          },
+          "Tab_3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SupplyTab",
+            "items": [
+              "Section12"
+            ],
+            "id": "Tab_3",
+            "type": "Tab"
+          },
+          "Tab_4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SupplyTab",
+            "items": [
+              "Section8",
+              "Section9",
+              "Section10",
+              "Section11"
+            ],
+            "id": "Tab_4",
+            "type": "Tab"
+          },
+          "Tab_5": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SupplyTab",
+            "items": [
+              "Section6",
+              "Section7"
+            ],
+            "id": "Tab_5",
+            "type": "Tab"
+          },
+          "Tab_6": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SupplyTab",
+            "items": [
+              "Section2",
+              "Section4",
+              "Section5"
+            ],
+            "id": "Tab_6",
+            "type": "Tab"
+          },
+          "Section1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SupplyPage",
+            "items": [
+              "Column1"
+            ],
+            "id": "Section1",
+            "type": "Section"
+          },
+          "Tab_7": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SupplyTab",
+            "items": [
+              "Section13"
+            ],
+            "id": "Tab_7",
+            "type": "Tab"
+          },
+          "Section2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_6",
+            "items": [
+              "Column2"
+            ],
+            "id": "Section2",
+            "type": "Section"
+          },
+          "CheckBox1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column16",
+            "items": [],
+            "id": "CheckBox1",
+            "type": "CheckBox"
+          },
+          "Section3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "InputGroup1",
+            "items": [
+              "Column4",
+              "Column3"
+            ],
+            "id": "Section3",
+            "type": "Section"
+          },
+          "CategorySelection": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "CategorySelection",
+            "type": "ComboBox"
+          },
+          "Section4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_6",
+            "items": [
+              "Column5",
+              "Column6",
+              "Column7"
+            ],
+            "id": "Section4",
+            "type": "Section"
+          },
+          "NumberBox1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column14",
+            "items": [],
+            "id": "NumberBox1",
+            "type": "NumberBox"
+          },
+          "Activity": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column8",
+            "items": [],
+            "id": "Activity",
+            "type": "Switch"
+          },
+          "Section5": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_6",
+            "items": [
+              "Column8"
+            ],
+            "id": "Section5",
+            "type": "Section"
+          },
+          "Section6": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_5",
+            "items": [
+              "Column9"
+            ],
+            "id": "Section6",
+            "type": "Section"
+          },
+          "Label20": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label20",
+            "type": "Label"
+          },
+          "Section7": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_5",
+            "items": [
+              "Column10",
+              "Column11"
+            ],
+            "id": "Section7",
+            "type": "Section"
+          },
+          "Label21": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label21",
+            "type": "Label"
+          },
+          "Section8": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_4",
+            "items": [
+              "Column12"
+            ],
+            "id": "Section8",
+            "type": "Section"
+          },
+          "Label10": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label10",
+            "type": "Label"
+          },
+          "Label22": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label22",
+            "type": "Label"
+          },
+          "DateRangePicker1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "DateRangePicker1",
+            "type": "DateRangePicker"
+          },
+          "Section9": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_4",
+            "items": [
+              "Column13",
+              "Column14",
+              "Column15"
+            ],
+            "id": "Section9",
+            "type": "Section"
+          },
+          "ComboBox1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column15",
+            "items": [],
+            "id": "ComboBox1",
+            "type": "ComboBox"
+          },
+          "Label11": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label11",
+            "type": "Label"
+          },
+          "Label23": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label23",
+            "type": "Label"
+          },
+          "Column10": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section7",
+            "items": [
+              "Header1",
+              "Signature1"
+            ],
+            "id": "Column10",
+            "type": "Column"
+          },
+          "DateRangePicker2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "DateRangePicker2",
+            "type": "DateRangePicker"
+          },
+          "Label12": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label12",
+            "type": "Label"
+          },
+          "SolutionSelect": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "SolutionSelect",
+            "type": "ComboBox"
+          },
+          "Label24": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label24",
+            "type": "Label"
+          },
+          "Column11": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section7",
+            "items": [
+              "Header2",
+              "Signature2"
+            ],
+            "id": "Column11",
+            "type": "Column"
+          },
+          "DateRangePicker3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "DateRangePicker3",
+            "type": "DateRangePicker"
+          },
+          "FileSelector1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column17",
+            "items": [],
+            "id": "FileSelector1",
+            "type": "FileSelector"
+          },
+          "Label13": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label13",
+            "type": "Label"
+          },
+          "HTMLDetails": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "HTMLDetails",
+            "type": "HTMLTextBox"
+          },
+          "Label25": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label25",
+            "type": "Label"
+          },
+          "Column12": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section8",
+            "items": [
+              "Header3"
+            ],
+            "id": "Column12",
+            "type": "Column"
+          },
+          "ImageSelector1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column18",
+            "items": [],
+            "id": "ImageSelector1",
+            "type": "FileSelector"
+          },
+          "Label14": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label14",
+            "type": "Label"
+          },
+          "Label26": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label26",
+            "type": "Label"
+          },
+          "Column13": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "30%",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section9",
+            "items": [
+              "Label27"
+            ],
+            "id": "Column13",
+            "type": "Column"
+          },
+          "Divider1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Divider1",
+            "type": "Divider"
+          },
+          "Tags1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column8",
+            "items": [],
+            "id": "Tags1",
+            "type": "DataGrid"
+          },
+          "MajorValue": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column5",
+            "items": [],
+            "id": "MajorValue",
+            "type": "NumberBox"
+          },
+          "Label15": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label15",
+            "type": "Label"
+          },
+          "Label27": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column13",
+            "items": [],
+            "id": "Label27",
+            "type": "Label"
+          },
+          "Column14": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "30%",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section9",
+            "items": [
+              "NumberBox1"
+            ],
+            "id": "Column14",
+            "type": "Column"
+          },
+          "Divider2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Divider2",
+            "type": "Divider"
+          },
+          "Signature1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column10",
+            "items": [],
+            "id": "Signature1",
+            "type": "Signature"
+          },
+          "Label16": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label16",
+            "type": "Label"
+          },
+          "Label28": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column16",
+            "items": [],
+            "id": "Label28",
+            "type": "Label"
+          },
+          "Column15": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "20%",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section9",
+            "items": [
+              "ComboBox1"
+            ],
+            "id": "Column15",
+            "type": "Column"
+          },
+          "Divider3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Divider3",
+            "type": "Divider"
+          },
+          "Signature2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column11",
+            "items": [],
+            "id": "Signature2",
+            "type": "Signature"
+          },
+          "Label17": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label17",
+            "type": "Label"
+          },
+          "Column16": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section10",
+            "items": [
+              "Divider8",
+              "Header4",
+              "Divider9",
+              "Label28",
+              "CheckBox1"
+            ],
+            "id": "Column16",
+            "type": "Column"
+          },
+          "Divider4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Divider4",
+            "type": "Divider"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section1",
+            "items": [
+              "SupplyTab",
+              "ACTIVITY2"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "ApplicationName": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "ApplicationName",
+            "type": "ComboBox"
+          },
+          "Label18": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label18",
+            "type": "Label"
+          },
+          "Column17": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section13",
+            "items": [
+              "FileSelector1"
+            ],
+            "id": "Column17",
+            "type": "Column"
+          },
+          "Divider5": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Divider5",
+            "type": "Divider"
+          },
+          "MinorValue": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column6",
+            "items": [],
+            "id": "MinorValue",
+            "type": "NumberBox"
+          },
+          "Column2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section2",
+            "items": [
+              "SolutionSelect",
+              "ApplicationName",
+              "CategorySelection",
+              "SectorSelection",
+              "SummaryInformation",
+              "HTMLDetails",
+              "Properties1",
+              "CompatibleVersion"
+            ],
+            "id": "Column2",
+            "type": "Column"
+          },
+          "Label19": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label19",
+            "type": "Label"
+          },
+          "Column18": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section12",
+            "items": [
+              "ImageSelector1"
+            ],
+            "id": "Column18",
+            "type": "Column"
+          },
+          "Divider6": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Divider6",
+            "type": "Divider"
+          },
+          "Column3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section3",
+            "items": [],
+            "id": "Column3",
+            "type": "Column"
+          },
+          "Label1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label1",
+            "type": "Label"
+          },
+          "SupplyPage": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Section1"
+            ],
+            "id": "SupplyPage",
+            "type": "Form"
+          },
+          "Divider7": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Divider7",
+            "type": "Divider"
+          },
+          "Properties1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "Properties1",
+            "type": "DataGrid"
+          },
+          "Column4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section3",
+            "items": [],
+            "id": "Column4",
+            "type": "Column"
+          },
+          "Label2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label2",
+            "type": "Label"
+          },
+          "Divider8": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column16",
+            "items": [],
+            "id": "Divider8",
+            "type": "Divider"
+          },
+          "Column5": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "33%",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section4",
+            "items": [
+              "MajorValue"
+            ],
+            "id": "Column5",
+            "type": "Column"
+          },
+          "Label3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column9",
+            "items": [],
+            "id": "Label3",
+            "type": "Label"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "SupplyPage"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

@@ -1,0 +1,150 @@
+{
+  "name": "GetPartnerInformation",
+  "connectionId": "2dcd512f-99a0-4d7f-b7c3-773a3dc91931",
+  "connectionName": {
+    "tr-TR": "SYNERGYDEV"
+  },
+  "connectionType": 1,
+  "description": {},
+  "id": null,
+  "properties": {
+    "cacheTTL": 60000,
+    "cacheType": "Memory",
+    "enableCache": false,
+    "timeout": 60,
+    "commandText": "SELECT PARTNERINFO.DOCUMENTID,PARTNERCOMPANYNAME, PARTNERWEBADDRESS, PROVINCE, DISTRICT, STREET, NEIGHBOURHOOD, ADDRESSNUMBER, MaskInput3, FIRMNUMBER, FAXNUMBER, ACCOUNTANTADDRESS,AccountantNumber,\r\n    BEAMSLML.TEXT BEAM, QDMSSLML.TEXT QDMS, CSPSLML.TEXT CSP, ENSEMBLESLML.TEXT ENSEMBLE, EBASLML.TEXT EBA, SYNERGYSLML.TEXT SYNERGY\r\nFROM E_SupplierIdentification_PartnerDetailDescription PARTNERINFO\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionML PARTNERINFOML ON PARTNERINFO.ID = PARTNERINFOML.PARENTID AND PARTNERINFOML.CULTURE='system'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL BEAMSL ON PARTNERINFO.ID = BEAMSL.PARENTID and BEAMSL.CONTROLID='BEAM'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML BEAMSLML ON BEAMSL.ID=BEAMSLML.PARENTID AND BEAMSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL QDMSSL ON PARTNERINFO.ID = QDMSSL.PARENTID and QDMSSL.CONTROLID='QDMS'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML QDMSSLML ON QDMSSL.ID=QDMSSLML.PARENTID AND QDMSSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL CSPSL ON PARTNERINFO.ID = CSPSL.PARENTID and CSPSL.CONTROLID='CSP'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML CSPSLML ON CSPSL.ID=CSPSLML.PARENTID AND CSPSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL ENSEMBLESL ON PARTNERINFO.ID = ENSEMBLESL.PARENTID and ENSEMBLESL.CONTROLID='ENSEMBLE'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML ENSEMBLESLML ON ENSEMBLESL.ID=ENSEMBLESLML.PARENTID AND ENSEMBLESLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL EBASL ON PARTNERINFO.ID = EBASL.PARENTID and EBASL.CONTROLID='EBA'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML EBASLML ON EBASL.ID=EBASLML.PARENTID AND EBASLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL SYNERGYSL ON PARTNERINFO.ID = SYNERGYSL.PARENTID and SYNERGYSL.CONTROLID='SYNERGY'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML SYNERGYSLML ON SYNERGYSL.ID=SYNERGYSLML.PARENTID AND SYNERGYSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL STREETSL ON PARTNERINFO.ID = STREETSL.PARENTID and STREETSL.CONTROLID='STREET'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML STREETSLML ON STREETSL.ID=STREETSLML.PARENTID AND STREETSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL FIRMNUMBERSL ON PARTNERINFO.ID = FIRMNUMBERSL.PARENTID and FIRMNUMBERSL.CONTROLID='FIRMNUMBER'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML FIRMNUMBERSLML ON FIRMNUMBERSL.ID=FIRMNUMBERSLML.PARENTID AND FIRMNUMBERSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL FAXNUMBERSL ON PARTNERINFO.ID = FAXNUMBERSL.PARENTID and FAXNUMBERSL.CONTROLID='FAXNUMBER'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML FAXNUMBERSLML ON FAXNUMBERSL.ID=FAXNUMBERSLML.PARENTID AND FAXNUMBERSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL MaskInput3SL ON PARTNERINFO.ID = MaskInput3SL.PARENTID and MaskInput3SL.CONTROLID='MaskInput3'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML MaskInput3SLML ON MaskInput3SL.ID=MaskInput3SLML.PARENTID AND MaskInput3SLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL ACCOUNTANTADDRESSSL ON PARTNERINFO.ID = ACCOUNTANTADDRESSSL.PARENTID and ACCOUNTANTADDRESSSL.CONTROLID='ACCOUNTANTADDRESS'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML ACCOUNTANTADDRESSSLML ON ACCOUNTANTADDRESSSL.ID=ACCOUNTANTADDRESSSLML.PARENTID AND ACCOUNTANTADDRESSSLML.CULTURE={{CULTURE}}\r\n\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSL AccountantNumberSL ON PARTNERINFO.ID = AccountantNumberSL.PARENTID and AccountantNumberSL.CONTROLID='AccountantNumber'\r\nLEFT JOIN E_SupplierIdentification_PartnerDetailDescriptionSLML AccountantNumberSLML ON AccountantNumberSL.ID=AccountantNumberSLML.PARENTID AND AccountantNumberSLML.CULTURE={{CULTURE}}\r\n\r\n\r\n\r\n\r\n-- GROUP BY \r\n--     PARTNERCOMPANYNAME,\r\n--     PARTNERWEBADDRESS,\r\n--     PROVINCE,\r\n--     DISTRICT,\r\n--     STREET,\r\n--     NEIGHBOURHOOD,\r\nORDER BY CREATEDAT DESC;",
+    "parameters": [
+      {
+        "caption": "",
+        "isActive": true,
+        "isRequired": true,
+        "key": "CULTURE",
+        "value": "%User.Language%",
+        "valueType": 1,
+        "length": 255,
+        "subType": null
+      }
+    ],
+    "commandType": 1,
+    "executionType": 3
+  },
+  "structure": {
+    "columns": [
+      {
+        "name": "DOCUMENTID",
+        "type": 3,
+        "caption": "DOCUMENTID",
+        "columns": []
+      },
+      {
+        "name": "PARTNERCOMPANYNAME",
+        "type": 1,
+        "caption": "PARTNERCOMPANYNAME",
+        "columns": []
+      },
+      {
+        "name": "PARTNERWEBADDRESS",
+        "type": 1,
+        "caption": "PARTNERWEBADDRESS",
+        "columns": []
+      },
+      {
+        "name": "PROVINCE",
+        "type": 1,
+        "caption": "PROVINCE",
+        "columns": []
+      },
+      {
+        "name": "DISTRICT",
+        "type": 1,
+        "caption": "DISTRICT",
+        "columns": []
+      },
+      {
+        "name": "STREET",
+        "type": 1,
+        "caption": "STREET",
+        "columns": []
+      },
+      {
+        "name": "NEIGHBOURHOOD",
+        "type": 1,
+        "caption": "NEIGHBOURHOOD",
+        "columns": []
+      },
+      {
+        "name": "ADDRESSNUMBER",
+        "type": 1,
+        "caption": "ADDRESSNUMBER",
+        "columns": []
+      },
+      {
+        "name": "MaskInput3",
+        "type": 1,
+        "caption": "MaskInput3",
+        "columns": []
+      },
+      {
+        "name": "FIRMNUMBER",
+        "type": 1,
+        "caption": "FIRMNUMBER",
+        "columns": []
+      },
+      {
+        "name": "FAXNUMBER",
+        "type": 1,
+        "caption": "FAXNUMBER",
+        "columns": []
+      },
+      {
+        "name": "ACCOUNTANTADDRESS",
+        "type": 1,
+        "caption": "ACCOUNTANTADDRESS",
+        "columns": []
+      },
+      {
+        "name": "AccountantNumber",
+        "type": 1,
+        "caption": "AccountantNumber",
+        "columns": []
+      },
+      {
+        "name": "BEAM",
+        "type": 1,
+        "caption": "BEAM",
+        "columns": []
+      },
+      {
+        "name": "QDMS",
+        "type": 1,
+        "caption": "QDMS",
+        "columns": []
+      },
+      {
+        "name": "CSP",
+        "type": 1,
+        "caption": "CSP",
+        "columns": []
+      },
+      {
+        "name": "ENSEMBLE",
+        "type": 1,
+        "caption": "ENSEMBLE",
+        "columns": []
+      },
+      {
+        "name": "EBA",
+        "type": 1,
+        "caption": "EBA",
+        "columns": []
+      },
+      {
+        "name": "SYNERGY",
+        "type": 1,
+        "caption": "SYNERGY",
+        "columns": []
+      }
+    ],
+    "returnType": 10
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "name": "ConsultingDefinition_Archive_DataSource",
+  "connectionId": "058127df-c8b5-4126-9c6a-e4da83d2a0ab",
+  "connectionName": {
+    "tr-TR": "SystemDefaultConnection"
+  },
+  "connectionType": 1,
+  "description": {},
+  "id": null,
+  "properties": {
+    "cacheTTL": 60000,
+    "cacheType": "Memory",
+    "enableCache": true,
+    "timeout": 60,
+    "commandText": "SELECT DOCUMENTID,\nCOALESCE(NULLIF(E_SupplierIdentification_ConsultingDefinitionML_SystemCulture.CONSULTINGFEES, ''), NULLIF(E_SupplierIdentification_ConsultingDefinitionML_UserCulture.CONSULTINGFEES, ''), NULLIF(E_SupplierIdentification_ConsultingDefinitionML_defaultCulture.CONSULTINGFEES, '')) AS CONSULTINGFEES,\nCOALESCE(NULLIF(E_SupplierIdentification_ConsultingDefinitionML_SystemCulture.SYSTEMNAME1, ''), NULLIF(E_SupplierIdentification_ConsultingDefinitionML_UserCulture.SYSTEMNAME1, ''), NULLIF(E_SupplierIdentification_ConsultingDefinitionML_defaultCulture.SYSTEMNAME1, '')) AS SYSTEMNAME1,\nCOALESCE(NULLIF(E_SupplierIdentification_ConsultingDefinitionML_SystemCulture.CONSULTANCYNAME, ''), NULLIF(E_SupplierIdentification_ConsultingDefinitionML_UserCulture.CONSULTANCYNAME, ''), NULLIF(E_SupplierIdentification_ConsultingDefinitionML_defaultCulture.CONSULTANCYNAME, '')) AS CONSULTANCYNAME,\nE_SupplierIdentification_ConsultingDefinitionSL.SECTOR1,\nE_SupplierIdentification_ConsultingDefinitionSL.CURRENCYTYPE,\nE_SupplierIdentification_ConsultingDefinitionSL.CATEGORY1,\nE_SupplierIdentification_ConsultingDefinitionSL.SESSIONTYPE,\nE_SupplierIdentification_ConsultingDefinitionSL.FEESTATUS,\nE_SupplierIdentification_ConsultingDefinition.ACTIVITY\n FROM E_SupplierIdentification_ConsultingDefinition\n\n            OUTER APPLY (SELECT CONSULTINGFEES,SYSTEMNAME1,CONSULTANCYNAME FROM E_SupplierIdentification_ConsultingDefinitionML WHERE E_SupplierIdentification_ConsultingDefinition.ID = E_SupplierIdentification_ConsultingDefinitionML.PARENTID AND E_SupplierIdentification_ConsultingDefinitionML.CULTURE = 'system') E_SupplierIdentification_ConsultingDefinitionML_SystemCulture \n            OUTER APPLY (SELECT CONSULTINGFEES,SYSTEMNAME1,CONSULTANCYNAME FROM E_SupplierIdentification_ConsultingDefinitionML WHERE E_SupplierIdentification_ConsultingDefinition.ID = E_SupplierIdentification_ConsultingDefinitionML.PARENTID AND E_SupplierIdentification_ConsultingDefinitionML.CULTURE = {{Culture}}) E_SupplierIdentification_ConsultingDefinitionML_UserCulture\n            OUTER APPLY (SELECT CONSULTINGFEES,SYSTEMNAME1,CONSULTANCYNAME FROM E_SupplierIdentification_ConsultingDefinitionML WHERE E_SupplierIdentification_ConsultingDefinition.ID = E_SupplierIdentification_ConsultingDefinitionML.PARENTID AND E_SupplierIdentification_ConsultingDefinitionML.CULTURE = (SELECT TOP 1 CULTURE from LANGUAGES WHERE ISDEFAULT = 1)) E_SupplierIdentification_ConsultingDefinitionML_defaultCulture\n            \n\n LEFT JOIN\n (SELECT * FROM (\n\t\tSELECT formSL.CONTROLID, \n                   (\n                       SELECT \n                         STRING_AGG(formSLMLMultiple.TEXT, ',') AS TEXT                    \n                       FROM E_SupplierIdentification_ConsultingDefinitionSL formSLMultiple\n                           JOIN E_SupplierIdentification_ConsultingDefinitionSLML formSLMLMultiple WITH (NOLOCK)\n                               ON formSLMultiple.ID = formSLMLMultiple.PARENTID\n                       WHERE formSLMultiple.PARENTID = formSL.PARENTID\n                             AND formSLMultiple.CONTROLID = formSL.CONTROLID\n                             AND formSLMLMultiple.CULTURE = CASE WHEN\n                                             EXISTS (SELECT TOP 1 1 FROM E_SupplierIdentification_ConsultingDefinitionSLML checkML WITH (NOLOCK) WHERE\n                                                        formSLML.PARENTID = checkML.PARENTID AND\n                                                        checkML.CULTURE = {{Culture}} AND\n                                                        checkML.TEXT  IS NOT NULL\n                                                    )\n                                             THEN {{Culture}}\n                                             WHEN\n                                             (SELECT COUNT (1) FROM E_SupplierIdentification_ConsultingDefinitionSLML WHERE \n                                                 E_SupplierIdentification_ConsultingDefinitionSLML.PARENTID = formSLMultiple.ID) = 1\n                                             THEN \n                                                 formSLMLMultiple.CULTURE\n                                             ELSE\n                                                 'system'\n                                             END\n                        \n                   ) AS TEXT, \n                formSL.PARENTID\n\t\t\t        FROM E_SupplierIdentification_ConsultingDefinitionSL formSL\n\t\t\t        JOIN E_SupplierIdentification_ConsultingDefinitionSLML formSLML \n\t\t\t        \t WITH (NOLOCK) ON formSL.ID = formSLML.PARENTID\n\t\t        ) as formSLML\t\nPIVOT(MAX(TEXT) FOR CONTROLID IN (SECTOR1,CURRENCYTYPE,CATEGORY1,SESSIONTYPE,FEESTATUS)) AS formSelect)  E_SupplierIdentification_ConsultingDefinitionSL\n          ON E_SupplierIdentification_ConsultingDefinitionSL.PARENTID = E_SupplierIdentification_ConsultingDefinition.ID\n         \nWHERE\nE_SupplierIdentification_ConsultingDefinition.DELETEDAT IS NULL\nAND ({{PARAMS}} = '0' OR E_SupplierIdentification_ConsultingDefinition.ACTIVITY = {{PARAMS}})\n\nORDER BY\n    CASE\n        WHEN {{PARAMS}} = '1' THEN E_SupplierIdentification_ConsultingDefinition.ACTIVITY\n        ELSE 1 + E_SupplierIdentification_ConsultingDefinition.ACTIVITY\n    END DESC,\nDOCUMENTID DESC",
+    "parameters": [
+      {
+        "caption": "Culture",
+        "isActive": true,
+        "isRequired": true,
+        "key": "Culture",
+        "value": "%User.Language%",
+        "valueType": 1,
+        "length": 10,
+        "subType": null
+      },
+      {
+        "caption": "",
+        "isActive": true,
+        "isRequired": true,
+        "key": "PARAMS",
+        "value": "0",
+        "valueType": 1,
+        "length": 255,
+        "subType": null
+      }
+    ],
+    "commandType": 1,
+    "executionType": 3
+  },
+  "structure": {
+    "columns": [
+      {
+        "name": "DOCUMENTID",
+        "type": 3,
+        "caption": "DOCUMENTID",
+        "columns": []
+      },
+      {
+        "name": "CONSULTINGFEES",
+        "type": 1,
+        "caption": "CONSULTINGFEES",
+        "columns": []
+      },
+      {
+        "name": "SYSTEMNAME1",
+        "type": 1,
+        "caption": "SYSTEMNAME1",
+        "columns": []
+      },
+      {
+        "name": "CONSULTANCYNAME",
+        "type": 1,
+        "caption": "CONSULTANCYNAME",
+        "columns": []
+      },
+      {
+        "name": "SECTOR1",
+        "type": 1,
+        "caption": "SECTOR1",
+        "columns": []
+      },
+      {
+        "name": "CURRENCYTYPE",
+        "type": 1,
+        "caption": "CURRENCYTYPE",
+        "columns": []
+      },
+      {
+        "name": "CATEGORY1",
+        "type": 1,
+        "caption": "CATEGORY1",
+        "columns": []
+      },
+      {
+        "name": "SESSIONTYPE",
+        "type": 1,
+        "caption": "SESSIONTYPE",
+        "columns": []
+      },
+      {
+        "name": "FEESTATUS",
+        "type": 1,
+        "caption": "FEESTATUS",
+        "columns": []
+      },
+      {
+        "name": "ACTIVITY",
+        "type": 2,
+        "caption": "ACTIVITY",
+        "columns": []
+      }
+    ],
+    "returnType": 10
+  }
+}

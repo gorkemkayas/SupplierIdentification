@@ -1,0 +1,45 @@
+{
+  "name": "DeleteConsultingDefinition",
+  "connectionId": "058127df-c8b5-4126-9c6a-e4da83d2a0ab",
+  "connectionName": {
+    "tr-TR": "SystemDefaultConnection"
+  },
+  "connectionType": 1,
+  "description": {},
+  "id": null,
+  "properties": {
+    "cacheTTL": 60000,
+    "cacheType": "Memory",
+    "enableCache": true,
+    "timeout": 60,
+    "commandText": "UPDATE E_SupplierIdentification_ConsultingDefinition SET DELETEDAT=SYSDATETIMEOFFSET(),DELETEDBY={{UserId}} WHERE DOCUMENTID={{DocumentId}}",
+    "parameters": [
+      {
+        "caption": "",
+        "isActive": true,
+        "isRequired": true,
+        "key": "UserId",
+        "value": "%User.Id%",
+        "valueType": 3,
+        "length": 255,
+        "subType": null
+      },
+      {
+        "caption": "",
+        "isActive": true,
+        "isRequired": true,
+        "key": "DocumentId",
+        "value": 0,
+        "valueType": 3,
+        "length": 255,
+        "subType": null
+      }
+    ],
+    "commandType": 1,
+    "executionType": 2
+  },
+  "structure": {
+    "columns": [],
+    "returnType": 0
+  }
+}

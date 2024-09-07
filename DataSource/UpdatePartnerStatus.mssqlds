@@ -1,0 +1,35 @@
+{
+  "name": "UpdatePartnerStatus",
+  "connectionId": "058127df-c8b5-4126-9c6a-e4da83d2a0ab",
+  "connectionName": {
+    "tr-TR": "SystemDefaultConnection"
+  },
+  "connectionType": 1,
+  "description": {},
+  "id": null,
+  "properties": {
+    "cacheTTL": 60000,
+    "cacheType": "Memory",
+    "enableCache": true,
+    "timeout": 60,
+    "commandText": "UPDATE E_SupplierIdentification_PartnerUser SET ACTIVITY1=CASE WHEN CAST(ACTIVITY1 AS int)=1 THEN 0 WHEN CAST(ACTIVITY1 AS int)=0 THEN 1 END WHERE DOCUMENTID={{DocumentId}}",
+    "parameters": [
+      {
+        "caption": "",
+        "isActive": true,
+        "isRequired": true,
+        "key": "DocumentId",
+        "value": "1",
+        "valueType": 1,
+        "length": 255,
+        "subType": null
+      }
+    ],
+    "commandType": 1,
+    "executionType": 2
+  },
+  "structure": {
+    "columns": [],
+    "returnType": 0
+  }
+}

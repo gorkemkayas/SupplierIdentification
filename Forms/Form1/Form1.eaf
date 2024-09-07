@@ -1,0 +1,104 @@
+{
+  "data": {
+    "Form1": {
+      "properties": {
+        "ddl": {
+          "name": "Form1"
+        },
+        "text": {
+          "tr-TR": "Form1",
+          "en-US": "Form1"
+        },
+        "caption": {
+          "text": {
+            "tr-TR": "Form1",
+            "en-US": "Form1"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "tr-TR": "Kaydet",
+              "en-US": "Save"
+            }
+          }
+        ],
+        "name": "Form1",
+        "controlId": "1c304cfc-aa8e-43a9-afd4-62ec33034c12",
+        "controlType": "Form",
+        "rules": {}
+      },
+      "viewProperties": {},
+      "id": "Form1",
+      "type": "Form"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "Form1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Section1"
+            ],
+            "id": "Form1",
+            "type": "Form"
+          },
+          "Section1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Form1",
+            "items": [
+              "Column1"
+            ],
+            "id": "Section1",
+            "type": "Section"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "100",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section1",
+            "items": [],
+            "id": "Column1",
+            "type": "Column"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "Form1"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

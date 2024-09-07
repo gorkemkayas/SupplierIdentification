@@ -1,0 +1,372 @@
+{
+  "data": {
+    "SolutionEdit": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnToolbarButtonClicked",
+            "methodName": "SolutionEdit_OnToolbarButtonClicked"
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "Çözüm Ekleme Sayfası",
+            "en-US": "SolutionEdit",
+            "ru-RU": "SolutionEdit",
+            "az-Latn-AZ": "SolutionEdit"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "tr-TR": "Kaydet",
+              "en-US": "Save",
+              "ru-RU": "Сохранять",
+              "az-Latn-AZ": "Yadda Saxla"
+            },
+            "validate": false
+          }
+        ],
+        "name": "SolutionEdit",
+        "ddl": {
+          "name": "SolutionEdit"
+        },
+        "text": {
+          "tr-TR": "SolutionEdit",
+          "en-US": "SolutionEdit",
+          "ru-RU": "SolutionEdit",
+          "az-Latn-AZ": "SolutionEdit"
+        },
+        "commitId": 3,
+        "rules": {
+          "FormRequiredFields": {
+            "id": "FormRequiredFields",
+            "name": "FormRequiredFields",
+            "enabled": true,
+            "orderNo": 0,
+            "statements": [
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_SolutionDefinitiontatement_default_SolutionName",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_SolutionDefinitionolutionName",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "SolutionName_Required",
+                    "messages": {
+                      "tr-TR": "Çözüm Adı: Gerekli alan",
+                      "en-US": "Çözüm Adı: Required field",
+                      "ru-RU": "Çözüm Adı: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "SolutionName"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_SolutionName",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_SolutionDefinitionondition_default_SolutionName_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SolutionName",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_SolutionDefinitionondition_default_SolutionName",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SolutionEdit",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_SolutionName",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_SolutionName",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "SolutionName_Required",
+                    "messages": {
+                      "tr-TR": "Çözüm Adı: Gerekli alan",
+                      "en-US": "Çözüm Adı: Required field",
+                      "ru-RU": "Çözüm Adı: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "SolutionName"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_SolutionName",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_SolutionName_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SolutionName",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_SolutionName",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SolutionEdit",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "FormRequiredToasterMessage_default_SolutionDefinitionolutionName",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "SolutionName_Required",
+                "messages": {
+                  "tr-TR": "Çözüm Adı: Gerekli alan",
+                  "en-US": "Çözüm Adı: Required field",
+                  "ru-RU": "Çözüm Adı: Обязательное поле"
+                },
+                "highlightList": [
+                  "SolutionName"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_SolutionName",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "SolutionName_Required",
+                "messages": {
+                  "tr-TR": "Çözüm Adı: Gerekli alan",
+                  "en-US": "Çözüm Adı: Required field",
+                  "ru-RU": "Çözüm Adı: Обязательное поле"
+                },
+                "highlightList": [
+                  "SolutionName"
+                ]
+              }
+            ],
+            "triggerEvents": [
+              "SolutionEdit.client.OnBeforeSave",
+              "SolutionEdit.server.OnBeforeSave",
+              "SolutionEdit.client.OnToolbarButtonClicked",
+              "SolutionEdit.server.OnToolbarButtonClicked"
+            ]
+          }
+        },
+        "controlType": "Form",
+        "controlId": "6160c205-e6f2-4454-b540-14f26dc4f918"
+      },
+      "viewProperties": {},
+      "id": "SolutionEdit",
+      "type": "Form"
+    },
+    "SolutionName": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Çözüm Adı"
+          },
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "name": "SolutionName",
+        "ddl": {
+          "name": "SOLUTIONNAME"
+        },
+        "commitId": 19,
+        "placeholder": {
+          "tr-TR": "Çözüm Adı Belirtiniz..."
+        },
+        "controlId": "ac060573-e0d8-8400-e65c-3d5598ff493c",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "SolutionName",
+      "type": "TextBox"
+    },
+    "SolutionDefinition": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Çözüm Açıklaması"
+          },
+          "verticalAlign": "top",
+          "markSettings": {
+            "char": "*"
+          }
+        },
+        "maxLength": 5000,
+        "name": "SolutionDefinition",
+        "ddl": {
+          "size": 5000,
+          "name": "SolutionDefinition"
+        },
+        "showCharacterCounter": true,
+        "commitId": 37,
+        "placeholder": {
+          "tr-TR": "Çözüm Açıklaması Giriniz..."
+        },
+        "controlType": "TextArea",
+        "controlId": "564741db-a7f5-9282-9a3e-0cd7873dcb75",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "SolutionDefinition",
+      "type": "TextArea"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "SolutionEdit": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Section1"
+            ],
+            "id": "SolutionEdit",
+            "type": "Form"
+          },
+          "Section1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "SolutionEdit",
+            "items": [
+              "Column1"
+            ],
+            "id": "Section1",
+            "type": "Section"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section1",
+            "items": [
+              "SolutionName",
+              "SolutionDefinition"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "SolutionName": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "SolutionName",
+            "type": "TextBox"
+          },
+          "SolutionDefinition": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [],
+            "id": "SolutionDefinition",
+            "type": "TextArea"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "SolutionEdit"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

@@ -1,0 +1,1505 @@
+{
+  "data": {
+    "ConsultingFees": {
+      "properties": {
+        "clientEvents": [
+          {
+            "name": "OnValueChanged",
+            "methodName": "ConsultingFees_OnValueChanged"
+          }
+        ],
+        "caption": {
+          "font": {
+            "bold": true,
+            "size": 12
+          },
+          "position": "top",
+          "text": {
+            "tr-TR": "Danışmanlık Ücreti"
+          }
+        },
+        "name": "ConsultingFees",
+        "ddl": {
+          "name": "CONSULTINGFEES"
+        },
+        "commitId": 45,
+        "clientEnabled": false,
+        "controlType": "TextBox",
+        "controlId": "9c43d5ba-ef3c-ac44-6079-ac2618a8592f",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "ConsultingFees",
+      "type": "TextBox"
+    },
+    "Tab_Gallery": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_Gallery",
+        "ddl": {
+          "name": "Tab_Gallery"
+        },
+        "orderNo": 1,
+        "commitId": 0,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Galeri"
+        },
+        "controlId": "8ae5d5fa-e06b-6ca5-6965-8a0733f3b975",
+        "icon": "empty-icon",
+        "selected": false
+      },
+      "viewProperties": {},
+      "id": "Tab_Gallery",
+      "type": "Tab"
+    },
+    "ConsultingDefinition": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "Danışmanlık Ekleme Sayfası",
+            "en-US": "ConsultingDefinition",
+            "ru-RU": "ConsultingDefinition",
+            "az-Latn-AZ": "ConsultingDefinition"
+          }
+        },
+        "toolbarButtons": [
+          {
+            "key": "toolbarSaveButton",
+            "name": "Kaydet",
+            "icon": "save",
+            "enabled": true,
+            "caption": {
+              "tr-TR": "Kaydet",
+              "en-US": "Save",
+              "ru-RU": "Сохранять",
+              "az-Latn-AZ": "Yadda Saxla"
+            },
+            "validate": false
+          }
+        ],
+        "name": "ConsultingDefinition",
+        "ddl": {
+          "name": "ConsultingDefinition"
+        },
+        "text": {
+          "tr-TR": "ConsultingDefinition",
+          "en-US": "ConsultingDefinition",
+          "ru-RU": "ConsultingDefinition",
+          "az-Latn-AZ": "ConsultingDefinition"
+        },
+        "commitId": 2,
+        "rules": {
+          "FormRequiredFields": {
+            "id": "FormRequiredFields",
+            "name": "FormRequiredFields",
+            "enabled": true,
+            "orderNo": 0,
+            "statements": [
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_ConsultancyName",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_ConsultancyName",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "ConsultancyName_Required",
+                    "messages": {
+                      "tr-TR": "Danışmanlık Adı: Gerekli alan",
+                      "en-US": "Danışmanlık Adı: Required field",
+                      "ru-RU": "Danışmanlık Adı: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "ConsultancyName"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_ConsultancyName",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_ConsultancyName_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "ConsultancyName",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_ConsultancyName",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "ConsultingDefinition",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_SystemName1",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_SystemName1",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "SystemName1_Required",
+                    "messages": {
+                      "tr-TR": "Sistem Adı: Gerekli alan",
+                      "en-US": "Sistem Adı: Required field",
+                      "ru-RU": "Sistem Adı: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "SystemName1"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_SystemName1",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_SystemName1_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "SystemName1",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_SystemName1",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "ConsultingDefinition",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_Category1",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_Category1",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "Category1_Required",
+                    "messages": {
+                      "tr-TR": "Kategori: Gerekli alan",
+                      "en-US": "Kategori: Required field",
+                      "ru-RU": "Kategori: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "Category1"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_Category1",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_Category1_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "Category1",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_Category1",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "ConsultingDefinition",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              },
+              {
+                "enabled": true,
+                "collapsed": false,
+                "id": "FormRequiredFields_Statement_default_Sector1",
+                "typeName": "IfStatement",
+                "actions": [
+                  {
+                    "id": "FormRequiredToasterMessage_default_Sector1",
+                    "alertType": "Warning",
+                    "dialogType": "Toaster",
+                    "enabled": true,
+                    "typeName": "ValidationFailureAction",
+                    "name": "Sector1_Required",
+                    "messages": {
+                      "tr-TR": "Sektör: Gerekli alan",
+                      "en-US": "Sektör: Required field",
+                      "ru-RU": "Sektör: Обязательное поле"
+                    },
+                    "highlightList": [
+                      "Sector1"
+                    ]
+                  }
+                ],
+                "conditionGroup": {
+                  "id": "FormRequiredFields_ConditionGroup_default_Sector1",
+                  "typeName": "AndConditionGroup",
+                  "children": [],
+                  "conditions": [
+                    {
+                      "id": "FormRequiredFields_Condition_default_Sector1_value",
+                      "operation": "Null",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "Sector1",
+                        "propertyName": "value",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": null
+                    },
+                    {
+                      "id": "FormRequiredFields_View_Condition_default_Sector1",
+                      "operation": "Equals",
+                      "typeName": "ValueEntryCondition",
+                      "field": {
+                        "name": "ConsultingDefinition",
+                        "propertyName": "activeView",
+                        "type": "string",
+                        "enumMembers": []
+                      },
+                      "selectedField": null,
+                      "value": "default"
+                    }
+                  ],
+                  "collapsed": false
+                }
+              }
+            ],
+            "actions": [
+              {
+                "id": "FormRequiredToasterMessage_default_ConsultancyName",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "ConsultancyName_Required",
+                "messages": {
+                  "tr-TR": "Danışmanlık Adı: Gerekli alan",
+                  "en-US": "Danışmanlık Adı: Required field",
+                  "ru-RU": "Danışmanlık Adı: Обязательное поле"
+                },
+                "highlightList": [
+                  "ConsultancyName"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_SystemName1",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "SystemName1_Required",
+                "messages": {
+                  "tr-TR": "Sistem Adı: Gerekli alan",
+                  "en-US": "Sistem Adı: Required field",
+                  "ru-RU": "Sistem Adı: Обязательное поле"
+                },
+                "highlightList": [
+                  "SystemName1"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_Category1",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "Category1_Required",
+                "messages": {
+                  "tr-TR": "Kategori: Gerekli alan",
+                  "en-US": "Kategori: Required field",
+                  "ru-RU": "Kategori: Обязательное поле"
+                },
+                "highlightList": [
+                  "Category1"
+                ]
+              },
+              {
+                "id": "FormRequiredToasterMessage_default_Sector1",
+                "alertType": "Warning",
+                "dialogType": "Toaster",
+                "enabled": true,
+                "typeName": "ValidationFailureAction",
+                "name": "Sector1_Required",
+                "messages": {
+                  "tr-TR": "Sektör: Gerekli alan",
+                  "en-US": "Sektör: Required field",
+                  "ru-RU": "Sektör: Обязательное поле"
+                },
+                "highlightList": [
+                  "Sector1"
+                ]
+              }
+            ],
+            "triggerEvents": [
+              "ConsultingDefinition.client.OnBeforeSave",
+              "ConsultingDefinition.server.OnBeforeSave",
+              "ConsultingDefinition.client.OnToolbarButtonClicked",
+              "ConsultingDefinition.server.OnToolbarButtonClicked"
+            ]
+          }
+        },
+        "controlType": "Form",
+        "controlId": "e2861d4f-f189-440e-b4f8-b5acd83e3efb"
+      },
+      "viewProperties": {},
+      "id": "ConsultingDefinition",
+      "type": "Form"
+    },
+    "Sector1": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Sektör 1"
+            },
+            "selected": false,
+            "icon": "companies"
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "Sektör 2"
+            },
+            "selected": false,
+            "icon": "departments"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Sektör"
+          }
+        },
+        "name": "Sector1",
+        "ddl": {
+          "name": "SECTOR1",
+          "allowNull": false
+        },
+        "commitId": 17,
+        "placeholder": {
+          "tr-TR": "Sektör Seçiniz..."
+        },
+        "controlType": "ComboBox",
+        "controlId": "940d3ae4-e227-e331-3541-4a862aa70dfb",
+        "dataSourceType": "static",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "Sector1",
+      "type": "ComboBox"
+    },
+    "CurrencyType": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "$"
+            },
+            "selected": false,
+            "icon": ""
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "₺"
+            },
+            "selected": true,
+            "icon": ""
+          },
+          {
+            "key": "3",
+            "value": "3",
+            "text": {
+              "tr-TR": "€"
+            },
+            "selected": false,
+            "icon": ""
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "font": {
+            "color": "rgb(245, 245, 245)"
+          },
+          "position": "top",
+          "text": {
+            "tr-TR": "ComboBox3"
+          },
+          "size": {
+            "height": ""
+          }
+        },
+        "name": "CurrencyType",
+        "ddl": {
+          "name": "CURRENCYTYPE"
+        },
+        "commitId": 38,
+        "clientEnabled": false,
+        "controlType": "ComboBox",
+        "controlId": "edeb9fdb-f1e5-ae22-b780-e55747df9203",
+        "dataSourceType": "static",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "CurrencyType",
+      "type": "ComboBox"
+    },
+    "ACTIVITY": {
+      "properties": {
+        "caption": {
+          "text": {
+            "tr-TR": "ACTIVITY"
+          },
+          "horizontalAlign": "center"
+        },
+        "clientVisible": false,
+        "name": "ACTIVITY",
+        "ddl": {
+          "name": "ACTIVITY"
+        },
+        "value": true,
+        "commitId": 10,
+        "controlType": "Switch",
+        "controlId": "897a3037-afe2-2115-425f-70c922313b9f",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "ACTIVITY",
+      "type": "Switch"
+    },
+    "SessionType": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Yüzyüze"
+            },
+            "selected": true
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "Online"
+            },
+            "selected": false
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Oturum Türü"
+          }
+        },
+        "name": "SessionType",
+        "buttonType": "button",
+        "ddl": {
+          "name": "SESSIONTYPE"
+        },
+        "commitId": 13,
+        "controlType": "RadioList",
+        "controlId": "93b3dbcb-51c0-a48f-28eb-d1d5b79f579d",
+        "dataSourceType": "static",
+        "direction": "horizontal",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "SessionType",
+      "type": "RadioList"
+    },
+    "Category1": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Kategori 1"
+            },
+            "selected": false,
+            "icon": "user-groups"
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "Kategori 2"
+            },
+            "selected": false,
+            "icon": "user"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Kategori"
+          }
+        },
+        "name": "Category1",
+        "ddl": {
+          "name": "CATEGORY1",
+          "allowNull": false
+        },
+        "commitId": 14,
+        "placeholder": {
+          "tr-TR": "Kategori Seçiniz..."
+        },
+        "controlType": "ComboBox",
+        "controlId": "43a9ef11-e57d-f10a-08a6-875ceeace806",
+        "dataSourceType": "static",
+        "required": true
+      },
+      "viewProperties": {},
+      "id": "Category1",
+      "type": "ComboBox"
+    },
+    "SystemName1": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Sistem Adı"
+          }
+        },
+        "name": "SystemName1",
+        "ddl": {
+          "name": "SYSTEMNAME1"
+        },
+        "commitId": 18,
+        "placeholder": {
+          "tr-TR": "Sistem Adını Giriniz..."
+        },
+        "controlId": "791485c3-d85a-78ab-e8db-829323ba3226",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "SystemName1",
+      "type": "TextBox"
+    },
+    "FeeStatus": {
+      "properties": {
+        "items": [
+          {
+            "key": "1",
+            "value": "1",
+            "text": {
+              "tr-TR": "Ücretsiz"
+            },
+            "selected": true
+          },
+          {
+            "key": "2",
+            "value": "2",
+            "text": {
+              "tr-TR": "Ücretli"
+            },
+            "selected": false
+          }
+        ],
+        "clientEvents": [
+          {
+            "name": "OnValueChanged",
+            "methodName": "FeeStatus_OnValueChanged"
+          },
+          {
+            "name": "OnSelectedItemChanged",
+            "methodName": "FeeStatus_OnSelectedItemChanged"
+          },
+          {
+            "name": "OnSelectedItemChanging",
+            "methodName": "FeeStatus_OnSelectedItemChanging"
+          },
+          {
+            "name": "OnValueChanging",
+            "methodName": "FeeStatus_OnValueChanging"
+          }
+        ],
+        "dataSource": {
+          "connectionType": null,
+          "displayFormat": null,
+          "field": null,
+          "enableMultiLanguageDisplayExpr": false,
+          "displayExprML": {},
+          "defaultValue": null
+        },
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Ücret Durumu"
+          }
+        },
+        "name": "FeeStatus",
+        "ddl": {
+          "name": "FEESTATUS",
+          "allowNull": true
+        },
+        "commitId": 38,
+        "controlType": "RadioList",
+        "controlId": "de38fc0c-ccb2-f86a-68e7-0ef453f2c3ef",
+        "dataSourceType": "static",
+        "direction": "horizontal",
+        "required": false
+      },
+      "viewProperties": {},
+      "id": "FeeStatus",
+      "type": "RadioList"
+    },
+    "Tags1": {
+      "properties": {
+        "caption": {
+          "font": {
+            "size": 13
+          },
+          "text": {
+            "tr-TR": "Etiketler"
+          },
+          "size": {
+            "height": 25
+          }
+        },
+        "name": "Tags1",
+        "ddl": {
+          "name": "TAGS1"
+        },
+        "commitId": 29,
+        "editing": {
+          "showAddCommand": true
+        },
+        "controlId": "4f7e4d5f-838e-d310-bda3-96e2141a8a54",
+        "columns": [
+          {
+            "name": "Definition1",
+            "caption": {
+              "tr-TR": "Tanıtım"
+            },
+            "width": 100,
+            "align": "left",
+            "wordWrapEnabled": false,
+            "visible": true,
+            "sorting": {
+              "index": 0,
+              "order": "asc",
+              "enabled": true
+            },
+            "editingEnabled": true,
+            "filtering": {
+              "enabled": false,
+              "operation": "Contains",
+              "value": null
+            },
+            "headerFilterEnabled": false,
+            "summaryTypes": [],
+            "summaryTypePrefixes": [],
+            "editControl": {
+              "controlType": "TextBox",
+              "visible": true,
+              "clientVisible": true,
+              "enabled": true,
+              "clientEnabled": true,
+              "style": {
+                "backgroundColor": ""
+              },
+              "containerStyle": {},
+              "customClassName": "",
+              "caption": {
+                "ellipsis": true,
+                "font": {
+                  "bold": false,
+                  "color": "#25241f",
+                  "family": "Source Sans Pro, sans-serif",
+                  "italic": false,
+                  "size": "13",
+                  "strikethrough": false,
+                  "underline": false
+                },
+                "position": "left",
+                "text": {},
+                "visible": true,
+                "size": {
+                  "width": 120
+                },
+                "horizontalAlign": "left",
+                "verticalAlign": "middle",
+                "showColon": false,
+                "markSettings": {
+                  "char": null,
+                  "position": "atFirst",
+                  "style": {}
+                }
+              },
+              "designerProps": {
+                "selected": false
+              },
+              "readOnly": false,
+              "ddl": {
+                "name": "NewColumn1",
+                "allowNull": true,
+                "size": 50,
+                "type": "String"
+              },
+              "tabIndex": 0,
+              "text": "",
+              "placeholder": {},
+              "textAlign": "left",
+              "maxLength": 50,
+              "isSecretData": false,
+              "enableMultiLanguageText": false,
+              "multiLanguageText": {},
+              "showCharacterCounter": false,
+              "controlId": "Definition1",
+              "name": "Definition1"
+            },
+            "defaultValue": null,
+            "isPrimaryKey": true,
+            "autoIncrement": false,
+            "useThousandSeparator": false,
+            "precision": 0,
+            "format": null,
+            "hidingPriority": null,
+            "actionButtonProps": {
+              "name": "",
+              "text": {},
+              "title": {},
+              "icon": "search",
+              "typeName": "CreateFormArgs",
+              "args": {
+                "typeName": "CreateFormArgs",
+                "formName": null,
+                "projectName": null,
+                "size": 1,
+                "showOn": "panel",
+                "closeCurrentPanel": false,
+                "parameters": []
+              },
+              "visible": true
+            },
+            "iconMatchers": [],
+            "allowHiding": true,
+            "allowNull": true,
+            "customizeNullText": false,
+            "nullText": {},
+            "showEditorAlways": false,
+            "dbType": {
+              "type": "string",
+              "columnName": "NewColumn1"
+            },
+            "formatType": {
+              "format": "",
+              "type": "label"
+            },
+            "editType": "textBox",
+            "sourceType": "base64",
+            "enlargeOnClick": false,
+            "imageWidth": 100,
+            "sizeUnit": "pixels",
+            "imageType": "smallImage",
+            "defaultImage": null,
+            "preferredWidth": 0,
+            "key": "0"
+          }
+        ],
+        "controlType": "DataGrid"
+      },
+      "viewProperties": {},
+      "id": "Tags1",
+      "type": "DataGrid"
+    },
+    "Tab_Details": {
+      "properties": {
+        "enabled": true,
+        "name": "Tab_Details",
+        "ddl": {
+          "name": "Tab_Details"
+        },
+        "orderNo": 0,
+        "commitId": 0,
+        "controlType": "Tab",
+        "title": {
+          "tr-TR": "Detay"
+        },
+        "controlId": "0473ab14-9e86-0c08-4feb-2daa386f03d2",
+        "icon": "empty-icon",
+        "selected": true
+      },
+      "viewProperties": {},
+      "id": "Tab_Details",
+      "type": "Tab"
+    },
+    "ConsultancyName": {
+      "properties": {
+        "caption": {
+          "position": "top",
+          "text": {
+            "tr-TR": "Danışmanlık Adı"
+          }
+        },
+        "name": "ConsultancyName",
+        "ddl": {
+          "name": "CONSULTANCYNAME"
+        },
+        "commitId": 17,
+        "placeholder": {
+          "tr-TR": "Danışmanlık Adını Giriniz..."
+        },
+        "controlId": "cac3603b-a6d0-3802-6c5b-2c00f48ae47c",
+        "required": true,
+        "controlType": "TextBox"
+      },
+      "viewProperties": {},
+      "id": "ConsultancyName",
+      "type": "TextBox"
+    },
+    "ConsultingTab": {
+      "properties": {
+        "items": [
+          {
+            "key": "Tab_Details",
+            "enabled": true,
+            "selected": true,
+            "title": {
+              "tr-TR": "Detay"
+            },
+            "icon": "empty-icon",
+            "orderNo": 0
+          },
+          {
+            "key": "Tab_Gallery",
+            "enabled": true,
+            "selected": false,
+            "title": {
+              "tr-TR": "Galeri"
+            },
+            "icon": "empty-icon",
+            "orderNo": 1
+          }
+        ],
+        "caption": {
+          "text": {
+            "tr-TR": "Tabs1"
+          }
+        },
+        "name": "ConsultingTab",
+        "ddl": {
+          "name": "Tabs1"
+        },
+        "selectedItem": {
+          "key": "Tab_Details",
+          "enabled": true,
+          "selected": true,
+          "title": {
+            "tr-TR": "Detay"
+          },
+          "icon": "empty-icon",
+          "orderNo": 0
+        },
+        "style": {
+          "height": 750
+        },
+        "commitId": 6,
+        "controlType": "Tabs",
+        "selectedIndex": 0,
+        "controlId": "b2f47323-457f-693e-2b00-21b92d789486"
+      },
+      "viewProperties": {},
+      "id": "ConsultingTab",
+      "type": "Tabs"
+    }
+  },
+  "views": {
+    "default": {
+      "entities": {
+        "items": {
+          "Column6": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section5",
+            "items": [
+              "ConsultingFees"
+            ],
+            "id": "Column6",
+            "type": "Column"
+          },
+          "Column7": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section5",
+            "items": [
+              "CurrencyType"
+            ],
+            "id": "Column7",
+            "type": "Column"
+          },
+          "Column8": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section6",
+            "items": [
+              "SessionType",
+              "Tags1",
+              "ACTIVITY"
+            ],
+            "id": "Column8",
+            "type": "Column"
+          },
+          "ConsultingFees": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column6",
+            "items": [],
+            "id": "ConsultingFees",
+            "type": "TextBox"
+          },
+          "Tab_Gallery": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "ConsultingTab",
+            "items": [],
+            "id": "Tab_Gallery",
+            "type": "Tab"
+          },
+          "ConsultingDefinition": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": null,
+            "items": [
+              "Section1"
+            ],
+            "id": "ConsultingDefinition",
+            "type": "Form"
+          },
+          "Sector1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "Sector1",
+            "type": "ComboBox"
+          },
+          "CurrencyType": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column7",
+            "items": [],
+            "id": "CurrencyType",
+            "type": "ComboBox"
+          },
+          "Section1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "ConsultingDefinition",
+            "items": [
+              "Column1"
+            ],
+            "id": "Section1",
+            "type": "Section"
+          },
+          "Section2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_Details",
+            "items": [
+              "Column2"
+            ],
+            "id": "Section2",
+            "type": "Section"
+          },
+          "Section3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_Details",
+            "items": [
+              "Column3"
+            ],
+            "id": "Section3",
+            "type": "Section"
+          },
+          "Section4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "ConsultingFees",
+            "items": [
+              "Column5",
+              "Column4"
+            ],
+            "id": "Section4",
+            "type": "Section"
+          },
+          "ACTIVITY": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column8",
+            "items": [],
+            "id": "ACTIVITY",
+            "type": "Switch"
+          },
+          "Section5": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_Details",
+            "items": [
+              "Column6",
+              "Column7"
+            ],
+            "id": "Section5",
+            "type": "Section"
+          },
+          "SessionType": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column8",
+            "items": [],
+            "id": "SessionType",
+            "type": "RadioList"
+          },
+          "Section6": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_Details",
+            "items": [
+              "Column8"
+            ],
+            "id": "Section6",
+            "type": "Section"
+          },
+          "Section7": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Tab_Details",
+            "items": [],
+            "id": "Section7",
+            "type": "Section"
+          },
+          "Category1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "Category1",
+            "type": "ComboBox"
+          },
+          "SystemName1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "SystemName1",
+            "type": "TextBox"
+          },
+          "FeeStatus": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column3",
+            "items": [],
+            "id": "FeeStatus",
+            "type": "RadioList"
+          },
+          "Tags1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column8",
+            "items": [],
+            "id": "Tags1",
+            "type": "DataGrid"
+          },
+          "Tab_Details": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "ConsultingTab",
+            "items": [
+              "Section2",
+              "Section3",
+              "Section5",
+              "Section6",
+              "Section7"
+            ],
+            "id": "Tab_Details",
+            "type": "Tab"
+          },
+          "ConsultancyName": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column2",
+            "items": [],
+            "id": "ConsultancyName",
+            "type": "TextBox"
+          },
+          "Column1": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section1",
+            "items": [
+              "ConsultingTab"
+            ],
+            "id": "Column1",
+            "type": "Column"
+          },
+          "Column2": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "100",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section2",
+            "items": [
+              "ConsultancyName",
+              "SystemName1",
+              "Category1",
+              "Sector1"
+            ],
+            "id": "Column2",
+            "type": "Column"
+          },
+          "Column3": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": "15",
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section3",
+            "items": [
+              "FeeStatus"
+            ],
+            "id": "Column3",
+            "type": "Column"
+          },
+          "Column4": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Section4",
+            "items": [],
+            "id": "Column4",
+            "type": "Column"
+          },
+          "ConsultingTab": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": null
+              }
+            },
+            "parentId": "Column1",
+            "items": [
+              "Tab_Gallery",
+              "Tab_Details"
+            ],
+            "id": "ConsultingTab",
+            "type": "Tabs"
+          },
+          "Column5": {
+            "designerProps": {
+              "locked": false,
+              "layout": {
+                "width": null,
+                "visible": true,
+                "clientVisible": true,
+                "padding": "0px 10px 0px 10px"
+              }
+            },
+            "parentId": "Section4",
+            "items": [],
+            "id": "Column5",
+            "type": "Column"
+          }
+        },
+        "ghostItems": {}
+      },
+      "result": [
+        "ConsultingDefinition"
+      ],
+      "description": null
+    }
+  },
+  "activeView": "default",
+  "version": 19
+}

@@ -1,0 +1,106 @@
+{
+  "name": "PartnerUserLast2_Archive_DataSource",
+  "connectionId": "058127df-c8b5-4126-9c6a-e4da83d2a0ab",
+  "connectionName": {
+    "tr-TR": "SystemDefaultConnection"
+  },
+  "connectionType": 1,
+  "description": {},
+  "id": null,
+  "properties": {
+    "cacheTTL": 60000,
+    "cacheType": "Memory",
+    "enableCache": true,
+    "timeout": 60,
+    "commandText": "SELECT DOCUMENTID,\nE_SupplierIdentification_PartnerUser.ACTIVITY1,\nCOALESCE(NULLIF(E_SupplierIdentification_PartnerUserML_SystemCulture.USERTITLE, ''), NULLIF(E_SupplierIdentification_PartnerUserML_UserCulture.USERTITLE, ''), NULLIF(E_SupplierIdentification_PartnerUserML_defaultCulture.USERTITLE, '')) AS USERTITLE,\nCOALESCE(NULLIF(E_SupplierIdentification_PartnerUserML_SystemCulture.USERSURNAME, ''), NULLIF(E_SupplierIdentification_PartnerUserML_UserCulture.USERSURNAME, ''), NULLIF(E_SupplierIdentification_PartnerUserML_defaultCulture.USERSURNAME, '')) AS USERSURNAME,\nCOALESCE(NULLIF(E_SupplierIdentification_PartnerUserML_SystemCulture.USEREMAIL, ''), NULLIF(E_SupplierIdentification_PartnerUserML_UserCulture.USEREMAIL, ''), NULLIF(E_SupplierIdentification_PartnerUserML_defaultCulture.USEREMAIL, '')) AS USEREMAIL,\nCOALESCE(NULLIF(E_SupplierIdentification_PartnerUserML_SystemCulture.USERNAME, ''), NULLIF(E_SupplierIdentification_PartnerUserML_UserCulture.USERNAME, ''), NULLIF(E_SupplierIdentification_PartnerUserML_defaultCulture.USERNAME, '')) AS USERNAME,\nE_SupplierIdentification_PartnerUser.USERPHONENUMBER,\nE_SupplierIdentification_PartnerUserSL.PARTNERGROUPS,\nCOALESCE(NULLIF(E_SupplierIdentification_PartnerUserML_SystemCulture.USERPASSWORD, ''), NULLIF(E_SupplierIdentification_PartnerUserML_UserCulture.USERPASSWORD, ''), NULLIF(E_SupplierIdentification_PartnerUserML_defaultCulture.USERPASSWORD, '')) AS USERPASSWORD,\nE_SupplierIdentification_PartnerUser.ACTIVITY1\n FROM E_SupplierIdentification_PartnerUser\n\n            OUTER APPLY (SELECT USERTITLE,USERSURNAME,USEREMAIL,USERNAME,USERPASSWORD FROM E_SupplierIdentification_PartnerUserML WHERE E_SupplierIdentification_PartnerUser.ID = E_SupplierIdentification_PartnerUserML.PARENTID AND E_SupplierIdentification_PartnerUserML.CULTURE = 'system') E_SupplierIdentification_PartnerUserML_SystemCulture \n            OUTER APPLY (SELECT USERTITLE,USERSURNAME,USEREMAIL,USERNAME,USERPASSWORD FROM E_SupplierIdentification_PartnerUserML WHERE E_SupplierIdentification_PartnerUser.ID = E_SupplierIdentification_PartnerUserML.PARENTID AND E_SupplierIdentification_PartnerUserML.CULTURE = {{Culture}}) E_SupplierIdentification_PartnerUserML_UserCulture\n            OUTER APPLY (SELECT USERTITLE,USERSURNAME,USEREMAIL,USERNAME,USERPASSWORD FROM E_SupplierIdentification_PartnerUserML WHERE E_SupplierIdentification_PartnerUser.ID = E_SupplierIdentification_PartnerUserML.PARENTID AND E_SupplierIdentification_PartnerUserML.CULTURE = (SELECT TOP 1 CULTURE from LANGUAGES WHERE ISDEFAULT = 1)) E_SupplierIdentification_PartnerUserML_defaultCulture\n            \n\n LEFT JOIN\n (SELECT * FROM (\n\t\tSELECT formSL.CONTROLID, \n                   (\n                       SELECT \n                         STRING_AGG(formSLMLMultiple.TEXT, ',') AS TEXT                    \n                       FROM E_SupplierIdentification_PartnerUserSL formSLMultiple\n                           JOIN E_SupplierIdentification_PartnerUserSLML formSLMLMultiple WITH (NOLOCK)\n                               ON formSLMultiple.ID = formSLMLMultiple.PARENTID\n                       WHERE formSLMultiple.PARENTID = formSL.PARENTID\n                             AND formSLMultiple.CONTROLID = formSL.CONTROLID\n                             AND formSLMLMultiple.CULTURE = CASE WHEN\n                                             EXISTS (SELECT TOP 1 1 FROM E_SupplierIdentification_PartnerUserSLML checkML WITH (NOLOCK) WHERE\n                                                        formSLML.PARENTID = checkML.PARENTID AND\n                                                        checkML.CULTURE = {{Culture}} AND\n                                                        checkML.TEXT  IS NOT NULL\n                                                    )\n                                             THEN {{Culture}}\n                                             WHEN\n                                             (SELECT COUNT (1) FROM E_SupplierIdentification_PartnerUserSLML WHERE \n                                                 E_SupplierIdentification_PartnerUserSLML.PARENTID = formSLMultiple.ID) = 1\n                                             THEN \n                                                 formSLMLMultiple.CULTURE\n                                             ELSE\n                                                 'system'\n                                             END\n                        \n                   ) AS TEXT, \n                formSL.PARENTID\n\t\t\t        FROM E_SupplierIdentification_PartnerUserSL formSL\n\t\t\t        JOIN E_SupplierIdentification_PartnerUserSLML formSLML \n\t\t\t        \t WITH (NOLOCK) ON formSL.ID = formSLML.PARENTID\n\t\t        ) as formSLML\t\nPIVOT(MAX(TEXT) FOR CONTROLID IN (PARTNERGROUPS)) AS formSelect)  E_SupplierIdentification_PartnerUserSL\n          ON E_SupplierIdentification_PartnerUserSL.PARENTID = E_SupplierIdentification_PartnerUser.ID\n         \nWHERE\nE_SupplierIdentification_PartnerUser.DELETEDAT IS NULL\nAND ({{PARAMS}} = '0' OR E_SupplierIdentification_PartnerUser.ACTIVITY1 = {{PARAMS}})\n\nORDER BY\n    CASE\n        WHEN {{PARAMS}} = '1' THEN E_SupplierIdentification_PartnerUser.ACTIVITY1\n        ELSE 1 + E_SupplierIdentification_PartnerUser.ACTIVITY1\n    END DESC,\n DOCUMENTID DESC\n",
+    "parameters": [
+      {
+        "caption": "Culture",
+        "isActive": true,
+        "isRequired": true,
+        "key": "Culture",
+        "value": "%User.Language%",
+        "valueType": 1,
+        "length": 10,
+        "subType": null
+      },
+      {
+        "caption": "",
+        "isActive": true,
+        "isRequired": true,
+        "key": "PARAMS",
+        "value": "0",
+        "valueType": 1,
+        "length": 255,
+        "subType": null
+      }
+    ],
+    "commandType": 1,
+    "executionType": 3
+  },
+  "structure": {
+    "columns": [
+      {
+        "name": "DOCUMENTID",
+        "type": 3,
+        "caption": "DOCUMENTID",
+        "columns": []
+      },
+      {
+        "name": "ACTIVITY1",
+        "type": 2,
+        "caption": "ACTIVITY1",
+        "columns": []
+      },
+      {
+        "name": "USERTITLE",
+        "type": 1,
+        "caption": "USERTITLE",
+        "columns": []
+      },
+      {
+        "name": "USERSURNAME",
+        "type": 1,
+        "caption": "USERSURNAME",
+        "columns": []
+      },
+      {
+        "name": "USEREMAIL",
+        "type": 1,
+        "caption": "USEREMAIL",
+        "columns": []
+      },
+      {
+        "name": "USERNAME",
+        "type": 1,
+        "caption": "USERNAME",
+        "columns": []
+      },
+      {
+        "name": "USERPHONENUMBER",
+        "type": 1,
+        "caption": "USERPHONENUMBER",
+        "columns": []
+      },
+      {
+        "name": "PARTNERGROUPS",
+        "type": 1,
+        "caption": "PARTNERGROUPS",
+        "columns": []
+      },
+      {
+        "name": "USERPASSWORD",
+        "type": 1,
+        "caption": "USERPASSWORD",
+        "columns": []
+      },
+      {
+        "name": "ACTIVITY11",
+        "type": 2,
+        "caption": "ACTIVITY11",
+        "columns": []
+      }
+    ],
+    "returnType": 10
+  }
+}
